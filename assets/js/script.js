@@ -39,7 +39,7 @@ function receiveValues() {
 }
 
 /**
- * Takes the values provided to receiveValues and calculates the resistanceValue
+ * Takes the values provided to receiveValues and calculates the actual resistanceValue
  */
 
 function calculateActualResistance() {
@@ -47,7 +47,7 @@ function calculateActualResistance() {
 }
 
 /**
- * Takes the values provided to receiveValues and calculates the capacitanceValue
+ * Takes the values provided to receiveValues and calculates the cactual apacitanceValue
  */
 
 function calculateActualCapacitance() {
@@ -55,7 +55,7 @@ function calculateActualCapacitance() {
 }
 
 /**
- * Takes the values provided to receiveValues and calculates the frequencyValue
+ * Takes the values provided to receiveValues and calculates the actual frequencyValue
  */
 
 function calculateActualFrequency() {
