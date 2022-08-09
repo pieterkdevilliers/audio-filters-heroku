@@ -8,6 +8,29 @@
     <title>High Pass Filter Calculator</title>
 </head>
 <body>
+    <div class="filter-options">
+        <a href="./high-pass.html" class="btn btn-primary">Passive High Pass Filter</a>
+        <a href="./low-pass.html" class="btn btn-primary">Passive Low Pass Filter</a>
+    </div>
+    <div class="value-inputs">
+        <span>
+            <p>Resistance Value</p>
+        <input type="float" name="Resistance Value" id="resistance-value">
+        </span>
+        <span>
+            <p>Capacitance Value</p>
+        <input type="float" name="Capacitance Value" id="capacitance-value">
+        </span>
+        <span>
+            <p>Cut-off Frequency</p>
+        <input type="float" name="Cut-off Frequency" id="cut-off-frequency">
+        </span>
+    
+    </div>
+    <div class="answer"></div>
+    <div class="equation"></div>
+    <div class="filter-diagrams"></div>
+    <footer>Copyright: Pieter K de Villiers 2022</footer>
     
     <script src="assets/js/script.js"></script>
 </body>
