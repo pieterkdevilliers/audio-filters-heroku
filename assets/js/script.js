@@ -28,11 +28,11 @@ function receiveValues() {
     ${frequencyScale}`);
 
     if (resistanceValue === "0" && capacitanceValue !== "0" && frequencyValue !== "0") {
-        calculateResistance();
+        calculateActualResistance();
     } else if (resistanceValue !== "0" && capacitanceValue === "0" && frequencyValue !== "0") {
-        calculateCapacitance();
+        calculateActualCapacitance();
     } else if (resistanceValue !== "0" && capacitanceValue !== "0" && frequencyValue === "0") {
-        calculateFrequency();
+        calculateActualFrequency();
     } else {
         console.log("Please complete two values")
     };
@@ -42,7 +42,7 @@ function receiveValues() {
  * Takes the values provided to receiveValues and calculates the resistanceValue
  */
 
-function calculateResistance() {
+function calculateActualResistance() {
     console.log("Calculating Resistance")
 }
 
@@ -50,7 +50,7 @@ function calculateResistance() {
  * Takes the values provided to receiveValues and calculates the capacitanceValue
  */
 
-function calculateCapacitance() {
+function calculateActualCapacitance() {
     console.log("Calculating Capacitance")
 }
 
@@ -58,7 +58,7 @@ function calculateCapacitance() {
  * Takes the values provided to receiveValues and calculates the frequencyValue
  */
 
-function calculateFrequency() {
+function calculateActualFrequency() {
     console.log("Calculating Frequency")
 }
 
