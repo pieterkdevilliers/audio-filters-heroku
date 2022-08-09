@@ -1,108 +1,276 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Pieter K de Villiers
 
-Welcome USER_NAME,
+## Audio Filters
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+[View the live project here.](https://tnamdarian.github.io/saranamdarian) 
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+![alt text](https://github.com/TNamdarian/saranamdarian/blob/master/assets/images/readme-images/am-i-responsive.png)  
+The image is from [Am I responsive?](http://ami.responsivedesign.is/)
 
-## Gitpod Reminders
+This is a simple website allowing the user to calculate the compnent values for either a Passive Low Pass Filter or a Passive High Pass Filter.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+The user enters 2 out of the 3 required values, and the calculator will calculate the value of the third component.
 
-`python3 -m http.server`
+The business goals of this website are:
+* Increase brand awareness.
+* Reach wider clients by showcasing the designers’ portfolio.
+* Generate leads (via the contact page).
+* Simple and straightforward UX design close to the definer’s’ concept i.e. simplicity. 
+* Create realistic expectations of the design process and establish smooth designer-client relationship. 
 
-A blue button should appear to click: _Make Public_,
+The customer visit this website to:
+* Search for a reliable and skilful interior designer to enhance their living and/or working environments. 
+* Have enough compelling and convincing evidence that this designer is the right fit for their project. 
+* Find the contact information effortlessly by filling up a form to hire the designer. 
+* Understand how the design process works and what the time scale is. 
 
-Another blue button should appear to click: _Open Browser_.
+# UX
+Most designer websites increase the cognitive load on the user which might make the users feel intimidated or overwhelmed. My aim was to create a simple website where the information is accessible effortlessly. Deciding to renovate living or working spaces is a difficult task; it is time-consuming, complex and expensive. Therefore, people might delay it until they can find someone who they can rely on. I want the design and content of the website to make this decision making process easier for potential clients. 
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+### Ideal client 
+The ideal client for this business is: 
+* English speaking
+* Values design 
+* Located in Vancouver, Canada
+* Home or/and business owners 
+* Willing to spend money on a design or concept to modernize/enhance their domestic or commercial spaces. 
 
-A blue button should appear to click: _Make Public_,
+The project help clients to: 
+* navigate easily through the website and reach the information they need easily. 
+* get to know the designer, previous clients, and her works and to contact her directly. 
 
-Another blue button should appear to click: _Open Browser_.
+### User stories: 
+1.	As a new visitor, I want to easily navigate the site to find whether the designer the right fit for my needs. 
+2.	As a business/home owner, I would like to find whether the designer is trustworthy and reputable by seeing what the previous clients say about them. 
+3.	As a new visitor, I would like to learn more about the designer’s vision, so I can get to know their background better. I would also like to know the reasons how this designer stands out of the crowd. 
+4.	As a new visitor, I would like to know the designer’s process and approach to their clients and projects. I would like to work with approachable designers and have a clear picture of what I should expect.  
+5.	As an interested client, I want to be able to contact the designer easily. 
+6.	As a potential client, I would like to learn more about the designers’ works and get validation via their history and presence in the social media. It is more reassuring to trust businesses who have a solid follower base.  
+7.	As a returning visitor to the website, I want to be able to find the contact page easily to reach the designer.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### Scope
+To achieve the strategic goals, I included the following features in the website: 
+* Header containing designer's logo and the menu bar including Home, Work, and Contact.
+* Home page which says about the designer for brand awareness. 
+* Company ethos detailing the designers’ style. 
+* Call for action button on every page. 
+* Portfolio highlighting the projects the designer has completed. 
+* Testimonials including the name of clients and their experience. 
+* Consultation process from the initial phone conversation to project completion. 
+* Consultation Form to allow users contact the designer to request a collaboration. 
+* Footer containing the designer's address, phone number and links to her social media and email.
 
-To log into the Heroku toolbelt CLI:
+## Skeleton 
+The website consists of three pages; Home (introduces the designer and her approach to design),  Work (showcasing the designer’s completed and current projects), and Contact (including consultation stages and a consultation form). 
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+### Wireframe Mockups: 
+* [Home](https://share.balsamiq.com/c/tQRnpMCDJFQxp9gezXZ22C.png)
+* [Work](https://share.balsamiq.com/c/p7h2GmsKvW81XdHYdKaVBW.png)
+* [Contact](https://share.balsamiq.com/c/tcT217VdfK6RTCJ52Sd5fY.png)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+## Surface 
+The logo and a collapsing menu bar are centred in the header incorporating black and white colours to represent a sleek and modern feel in keeping with the brand. This colour coordination is seen throughout the body of the website with dark typography to represent a minimalist yet bold styles.  The designer has chosen green colour for specific features such as hover over the menu items, call to action buttons, and social media icons to represent the sustainability in her designs. The combination of natural and green colours convey a sense of creativity and confidence which reflects the designer’s personality. I also tried to use bold typography to further promote confidence and creativity as a reflection of the industry. 
 
-------
+# Features 
+### Header
+The website consists of three pages; Home, Work and Contact. The **header** contains a **logo** and **menu** option on the top middle of every page.  This will create consistency throughout the page and the user can access the information via the menu bar and move around the site. The links will remain active when in use. 
 
-## Release History
+### Footer
+Every page has a **footer** with **designer's address**, **designer's phone number**, **social media and email icons** and **copyright information**. The social media icons are linked to the users’ social media accounts. 
+There is also a **Top** button which with one click it takes the user to the menu bar. 
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+### Home
+The Home page features an **image of the designer** to personalise the website and raise brand awareness. To the left side of the image, there is some information about the designer to make the users feel connected to the brand. 
+At the bottom of these, the **designer’s’ visions and ethos** are presented. This helps the users to be able to make an informed decision whether they share the same values as the designer with regards to design concepts. It will enhance user’s emotional response. 
+Finally, there is an invitation to have a chat about the user’s project via a **call to action** button: *Book your free consultation session now!*. 
+The Home page also uses **parallax effects** to separate each section and create positive user response. These features will turn into images which scroll up and down with the rest of the page for iPads and phones. 
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+### Work
+The Work page features **images in thumbnails** in 4 columns wide for laptop and desktop devices, 2 for iPads and 1 column wide for mobile devices.
+Each image can be clicked to open a **fancybox** window to view further images/details of each project. 
+The **testimonials** are placed below the project works to build trust and credibility and accountability of the designer. 
+At the bottom of the page, there is an invitation to have a chat about the user’s project via a **call to action** button: *Book your free consultation session now!*. 
+The Work page also uses **parallax effects** to separate each section and create positive user response. These features will turn into images which scroll up and down with the rest of the page for iPads and phones. 
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+### Contact  
+The contact page features the **consultation stages**. Each stage is warped in a box with a large icon and some description to inform the users of collaboration process. 
+Then, there will be a **Consultation Form** which the user can fill up to reach the designer laying over a **promotional image**. 
+The bottom of the form contains a **Book your free consultation now!** button.  
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+# Existing Features 
+* Header Logo – Exists on every page aiming to promote brand awareness. Clicking on the logo will return the users to the Home page as they expect. 
+* Header Navigation Bar – Exists on every page to allow users to navigate the website and move from one page to another for access to more information. 
+* [Home Page](https://tnamdarian.github.io/saranamdarian/) – Is a short introduction of the designer using visuals, a short biography of the designer and her ethos. 
+* Designer Photo – Exists on the Home page accompanied by a short biography of the designer. 
+* [Work Page](https://tnamdarian.github.io/saranamdarian/work.html) – It showcases the designers works and allows the visitors to view the thumbnail images of the designer’s works. Each image is clickable and can be viewed in a new page. 
+* Fancybox Viewer – Allows potential clients to view the designer’s works in more details. It opens in the photos in a bigger scale and users can move to the next of previous images and/or close them to return to the website. 
+* Footer –  Exists on every page and contains copyright to protect the content of the website; the social media and icons which link the users to the designer’s social media platforms; and the business address, phone number and email. For a better user-experience I put the link to the menu at the bottom of the page so the users do not need to scroll all the way up to access the menu. 
+* Designer’s Ethos – Exist on the Home page to familiarise the visitors with the designer’s style and vision. 
+* Testimonials – Exist in the Home page in a form of Carousel slides to confirm the designer’s credibility and build trust amongst users. 
+* Call to Action Buttons – Exist on every page and invites potential clients to make the first contact with the designer. 
+* Consultation Stages – Exist on the Contact page aiming to familiarise the users with the designer’s method of working and the stages involved in a project work. 
+* [Contact Page](https://tnamdarian.github.io/saranamdarian/contact.html) – Provides consultation stages and a consultation form. It allows the clients to send their request for a free consultation session. 
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+# Features to Implement in future
+Due to time restraints, I was unable to include the following features but hope to implement them in a future release:
+* Embed up-to-date social media feeds - To showcase promotional activity and create buzz for the client base.
+* Promotional video on the homepage – To make the homepage more appealing and engaging and create a more positive emotional response to the user. There was no promotional video available as this stage. 
+* Designer’s blog to share educational articles and guides for added value. The designer has not had time to create a blog yet.  
+* Live Chat app - To provide an instant connection between the user and company with high visibility on the site. I do not have the skills yet. 
+* Add CAPTCHA to contact form – Allows business to protect the contact form from spam.  – JavaScript Needed.
+* FAQ page, table with FAQs and dropdown buttons to view answers - Helps potential clients find answers to their common questions. (The designer has to compile and provide a list in the future.)
+* Option to choose the language of the website - As the artist's second language is Farsi, this would allow Farsi speaking visitors to the website who form a big population in Vancouver, to view it in their native language. The content was not ready at this stage.
+* Add a download button for a white paper for digital marketing purposes and building an email list in the future. The content was not ready at this stage. 
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+# Technologies Used
+This project uses HTML and CSS programming languages.
+-	[Balsamiq](https://balsamiq.cloud/sxrt5co/pf4f2oo) I used Balsamiq, the rapid low-fidelity UI wireframing tool to sketch the structure of the website layout and its pages following best UX practices.
+-	[Gitpod](https://gitpod.io/workspaces)- The developer used Gitpod to write the code to builds the website.
+-	[GitHub](https://github.com/) - The project used GitHub to host my code that was created and pushed from GitPod.
+-	[Bootstarp5](https://getbootstrap.com/) - The project uses Bootstrap5 (BootstrapCDN and components) to simplify the structure of the website and make the website responsive across various platforms.
+-   [FontAwesome](https://fontawesome.com/) - The projects uses a few icons from FontAwesome to make the websites less wordy and more visually appealing. 
+-	[Fancybox](https://fancyapps.com/fancybox/3/) The project uses Fancybox for a gallery modal popup to slideshow gallery images.
+-   [jQuery](https://jquery.com/) The project used jQuery to supply to JavaScript linked needed to the Fancybox gallery. 
+-	[Google Fonts](https://fonts.google.com/) The project uses Google fonts to style the website fonts.
+-   [Tiny-PNG](https://tinypng.com/) I used tinypng for big images up to 5M needed to be compressed to improve the website's loading time. 
+-   [CompressJPEG](https://compressjpeg.com/) The big images bigger than 5M needed to be compressed to improve the website's loading time.
+-	[Webaim.org](https://webaim.org/) The Webaim was used to test colour contrast on the project.
+-	[W3C Markup Validation Service](https://validator.w3.org/#validate_by_input) The W3C Markup Validation Service checked the markup validity of Web documents in HTML.
+-	[W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/#validate_by_input) W3C CSS Validation Service was used to check the validity of my CSS in the project.
+-	[WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/)I used WAVE to make my site more accessible to individuals with disabilities by detecting any potential issues.
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+# Testing 
+## Testing client stories from UX section of README.md
+1.	As a new visitor, I want to easily navigate the site to find whether the designer the right fit for my needs.
+    - The user can navigate through the website using the navbar **menu** on top of the page. 
+    - The **logo** links the user back to the **Home Page**. 
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+    ![alt text](https://github.com/TNamdarian/saranamdarian/blob/master/assets/images/readme-images/menubar.png)
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+    - The **4 reasons** on **Home Page** provide more information about the designer to the users. 
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+    ![alt text](https://github.com/TNamdarian/saranamdarian/blob/master/assets/images/readme-images/ethos.png)
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+    - The **call to action button** takes the users to the **Contact Page** where they can get more information on how to contact the designer. 
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+    ![alt text](https://github.com/TNamdarian/saranamdarian/blob/master/assets/images/readme-images/cta.png)
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+2.	As a business/home owner, I would like to find whether the designer is trustworthy and reputable by seeing what the previous clients say about them.
+    - On the **Work Page**, below the gallery the users can see the previous clients’ **testimonials**. 
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+    ![alt text](https://github.com/TNamdarian/saranamdarian/blob/master/assets/images/readme-images/testimonials.png)
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+3.	As a new visitor, I would like to learn more about the designer’s vision, so I can get to know their background better. I would also like to know the reasons how this designer stands out of the crowd. 
+    - The **4 reasons** on **Home Page** provide more information about the designer to the users. 
+    - The **gallery** on **Work Page** will show the designer’s range of skills. 
 
-------
+    ![alt text](https://github.com/TNamdarian/saranamdarian/blob/master/assets/images/readme-images/gallery.png)
 
-## FAQ about the uptime script
+4.	As a new visitor, I would like to know the designer’s process and approach to their clients and projects. I would like to work with approachable designers and have a clear picture of what I should expect.  
+    - In **Contact Page**, users can review the consultations process and have a realistic idea of a **Project Timeline**. 
 
-**Why have you added this script?**
+    ![alt text](https://github.com/TNamdarian/saranamdarian/blob/master/assets/images/readme-images/project-timeline.png)
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+5. As an interested client, I want to be able to contact the designer easily. 
+    - In **Contact Page**, users can fill up the **Consultation Form**.
 
-**How will this affect me?**
+    ![alt text](https://github.com/TNamdarian/saranamdarian/blob/master/assets/images/readme-images/consultation-form.png)
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+    - Each page, has a **call to action button** which takes users to the **Contact Page** to view the relevant information.
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+6. As a potential client, I would like to learn more about the designers’ works and get validation via their history and presence in the social media. It is more reassuring to trust businesses who have a solid follower base.  
+    - The galley on **Work Page** showcases the designer’s range of skills and projects. 
+    - The **footer** provides links to the designer's **social media** platforms. 
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+    ![alt text](https://github.com/TNamdarian/saranamdarian/blob/master/assets/images/readme-images/footer.png)
 
-**So….?**
+7. As a returning visitor to the website, I want to be able to find the contact page easily to reach the designer.
+    - The **phone number** and **address** of the designer has been shared in the footer on every page. 
+    
+## Code validation 
+I used [W3C CSS validation](https://jigsaw.w3.org/css-validator/#validate_by_input) and [W3C Markup Validation](https://validator.w3.org/#validate_by_input) to check the validity of the website code.
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+Several issues were identified on **W3C Markup Validation**. 
 
-**Can I opt out?**
+![alt text](https://github.com/TNamdarian/saranamdarian/blob/master/assets/images/readme-images/html-erros-contact-page.png)
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+![alt text](https://github.com/TNamdarian/saranamdarian/blob/master/assets/images/readme-images/aria-lebel-footer.png)
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+![alt text](https://github.com/TNamdarian/saranamdarian/blob/master/assets/images/readme-images/images-error.png)
 
-**Anything more?**
+After I rectified the issue, no further errors were picked. 
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+No errors were identified in the CSS code by **W3C CSS validation**. 
 
----
+![alt text](https://github.com/TNamdarian/saranamdarian/blob/master/assets/images/readme-images/clean.css.png)
 
-Happy coding!
+## Color Contrast 
+The initial `color: ##81b214;` had Contrast Ratio of 2.52:1 with the white background. So I changed it to a darker green. The [Color Contrast Accessibility Validator](https://webaim.org/) was used to test for colour contrast on the project.
+
+![alt text](https://github.com/TNamdarian/saranamdarian/blob/master/assets/images/readme-images/contrast-checker.png). 
+
+## COMPATIBILITY
+To ensure a broad range of users can successfully view/use the site, I tested it across all major browsers in both desktop and mobile configuration.
+
+* Chrome
+* Edge
+* Firefox
+* Safari
+* Internet Explorer
+
+## Issues
+The link on **Internet Explorer** does not recognise `font-antonio`. It displays the web using `San-sarif`. 
+
+# Further testing
+I asked my friends and family to click on the deployed link on their devices especially iPads and 17" and bigger laptops which I do not personally own. I added further bootstrap padding and margin and CSS media queries to make the website responsive on all devices. 
+
+# Deployment 
+This project was developed using [Gitpod](https://gitpod.io/workspaces), committed to git and pushed to GitHub using git commands. 
+
+To deploy this page to **GitHub Pages** from its [GitHub repository](https://github.com/TNamdarian/saranamdarian), the following steps were taken:
+
+1. Log into [GitHub](https://github.com/).
+2. From the list of repositories on the screen, **select saranamdarian**.
+3. From the menu items near the top of the page, select **Settings**.
+4. Scroll down to the **GitHub Pages** section.
+5. Under Source click the drop-down menu labelled None and select **Master Branch**. Then **Save** it. 
+6. Wait for a few minutes of the website to be deployed.
+7. Scroll back down to the **GitHub Pages** section to access the link to the deployed website.
+
+### Run this project locally
+- Select the Repository from the GitHub Dashboard.
+- Click the green button labelled 'Code'.
+- Click 'Download ZIP'.
+- Extract ZIP file on your computer.
+- Open folder and open index.html in web browser.
+
+### Clone this project
+- Select the Repository from the GitHub Dashboard.
+- Click the green button labelled 'Code'.
+- To clone the repository using:
+    - HTTPS: under "Clone with HTTPS", click checklist icon.
+    - SSH: click Use SSH, then click checklist icon.
+- Open Git Bash.
+- Change the current working directory to the location where you want the cloned directory.
+- Type 'git clone', and then paste the URL you copied earlier.
+- Press Enter to create your local clone.
+
+# Credits
+## Content
+The texts for all the pages have been created by the designer. 
+
+## Media 
+* The images were taken by and obtained from the designer – Sara Namdarian. 
+* Testimonial logos are from [Google Images](https://www.google.com/imghp?hl=en).
+
+## Code 
+* CSS code for shadows and hover responsiveness of gallery images and ptoject timeline boxes was originally taken from [Portrait Artist](https://ajgreaves.github.io/portrait-artist/index.html) by A Greaves. 
+
+# Acknowledgement 
+I decided to develop this website for my sister as she wanted to have a brand new website which has a more modern feel to it and it also reflected her own style and character. I took aspiration for this site from the following websites in terms of design: 
+* [Karimrashid.com](http://karimrashid.com/)
+* [Avissa Design](https://avissadesign.com/press)
+* [sokruta.com.ua/en](https://sokruta.com.ua/en)
+* I also received inspirations for the content of the website for personal branding via [Interior Design Business: How To Build a Personal Brand](https://essenziale-hd.com/2017/10/02/interior-design-business-build-personal-brand/).
+* Huge thanks to my mentor [Guido Cecilio Garcia Bernal](https://github.com/guidocecilio) guided me throughout this project.
+* I would like to also thank [Tim Nelson](https://github.com/TravelTimN), a great tutor at Code Institute, who helped me with problem solving. 
