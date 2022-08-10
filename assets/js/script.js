@@ -27,9 +27,9 @@ function receiveValues() {
     ${frequencyValue},
     ${frequencyScale}`);
 
-    let scaledResistance = calculateScaledResistance(resistanceValue, resistanceScale);
-    let scaledCapacitance = calculateScaledCapacitance(capacitanceValue, capacitanceScale);
-    let scaledFrequency = calculateScaledFrequency(frequencyValue, frequencyScale);
+    let scaledResistance = parseFloat(calculateScaledResistance(resistanceValue, resistanceScale));
+    let scaledCapacitance = parseFloat(calculateScaledCapacitance(capacitanceValue, capacitanceScale));
+    let scaledFrequency = parseFloat(calculateScaledFrequency(frequencyValue, frequencyScale));
 
         if (resistanceValue === "0" && capacitanceValue !== "0" && frequencyValue !== "0") {
         calculateFinalResistance(scaledCapacitance, scaledFrequency);
@@ -105,7 +105,7 @@ function calculateScaledFrequency(frequencyValue, frequencyScale) {
  */
 
 function calculateFinalResistance (scaledCapacitance, scaledFrequency) {
-    let finalResistance = parseFloat(scaledCapacitance + scaledFrequency);
+    let finalResistance = scaledCapacitance + scaledFrequency;
     console.log("Calculating final resistance");
     console.log(finalResistance);
 }
@@ -115,7 +115,7 @@ function calculateFinalResistance (scaledCapacitance, scaledFrequency) {
  */
 
  function calculateFinalCapacitance (scaledFrequency, scaledResistance) {
-    let finalCapacitance = parseFloat(scaledFrequency + scaledResistance);
+    let finalCapacitance = scaledFrequency + scaledResistance;
     console.log("Calculating final capacitance");
     console.log(finalCapacitance);
 }
@@ -125,7 +125,7 @@ function calculateFinalResistance (scaledCapacitance, scaledFrequency) {
  */
 
  function calculateFinalFrequency (scaledCapacitance, scaledResistance) {
-    let finalFrequency = parseFloat(scaledCapacitance + scaledResistance);
+    let finalFrequency = scaledCapacitance + scaledResistance;
     console.log("Calculating final frequency");
     console.log(finalFrequency)
 }
