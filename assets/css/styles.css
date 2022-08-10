@@ -37,3 +37,11 @@ footer {
     position: absolute;
     margin: auto 45%;
 }
+
+.equation {
+    text-align: center;
+}
+
+.filter-diagrams {
+    text-align: center;
+}
