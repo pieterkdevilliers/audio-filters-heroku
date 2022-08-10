@@ -27,19 +27,20 @@ function receiveValues() {
     ${frequencyValue},
     ${frequencyScale}`);
 
-    calculateScaledResistance(resistanceValue, resistanceScale);
-    calculateScaledCapacitance(capacitanceValue, capacitanceScale);
-    calculateScaledFrequency(frequencyValue, frequencyScale);
+    let scaledResistance = calculateScaledResistance(resistanceValue, resistanceScale);
+    let scaledCapacitance = calculateScaledCapacitance(capacitanceValue, capacitanceScale);
+    let scaledFrequency = calculateScaledFrequency(frequencyValue, frequencyScale);
 
-    if (resistanceValue === "0" && capacitanceValue !== "0" && frequencyValue !== "0") {
-        calculateFinalResistance(scaledCapacitance, scaledFrequence);
+        if (resistanceValue === "0" && capacitanceValue !== "0" && frequencyValue !== "0") {
+        calculateFinalResistance(scaledCapacitance, scaledFrequency);
     } else if (resistanceValue !== "0" && capacitanceValue === "0" && frequencyValue !== "0") {
-        calculateFinalCapacitance(scaledResistance, scaledFrequence);
+        calculateFinalCapacitance(scaledFrequency, scaledResistance);
     } else if (resistanceValue !== "0" && capacitanceValue !== "0" && frequencyValue === "0") {
         calculateFinalFrequency(scaledCapacitance, scaledResistance);
     } else {
         console.log("Please complete two values")
-    };
+    }
+
 }
 
 /**
@@ -47,18 +48,16 @@ function receiveValues() {
  */
 
 function calculateScaledResistance(resistanceValue, resistanceScale) {
-    console.log("Calculating Resistance");
-    console.log(resistanceValue, resistanceScale);
     if (resistanceScale === "kohm") {
         let scaledResistance  = resistanceValue * 1000;
+        return scaledResistance;
     } else if (resistanceScale === "mohm") {
-        console.log("Resistance Scale is mHz");
         let scaledResistance = resistanceValue * 1000000;
+        return scaledResistance;
     } else {
-        console.log("Resistance Scale is Hz");
         let scaledResistance = resistanceValue;
+        return scaledResistance;
     }
-    
 }
 
 /**
@@ -66,18 +65,21 @@ function calculateScaledResistance(resistanceValue, resistanceScale) {
  */
 
 function calculateScaledCapacitance(capacitanceValue, capacitanceScale) {
-    console.log("Calculating Capacitance");
-    console.log(capacitanceValue, capacitanceScale);
     if (capacitanceScale === "mF") {
         let scaledCapacitance = capacitanceValue / 1000;
+        return scaledCapacitance;
     } else if (capacitanceScale === "uF") {
         let scaledCapacitance = capacitanceValue / 1000000;
+        return scaledCapacitance;
     } else if (capacitanceScale === "nF") {
         let scaledCapacitance = capacitanceValue / 1000000000;
+        return scaledCapacitance;
     } else if (capacitanceScale === "pF") {
-        let scaled = capacitanceValue / 1000000000000;
+        let scaledCapacitance = capacitanceValue / 1000000000000;
+        return scaledCapacitance;
     } else {
         let scaledCapacitance = capacitanceValue;
+        return scaledCapacitance;
     }
 }
 
@@ -86,14 +88,15 @@ function calculateScaledCapacitance(capacitanceValue, capacitanceScale) {
  */
 
 function calculateScaledFrequency(frequencyValue, frequencyScale) {
-    console.log("Calculating Frequency");
-    console.log(frequencyValue, frequencyScale);
     if (frequencyScale === "kHz") {
-        let scaledFrequence = frequencyValue * 1000;
+        let scaledFrequency = frequencyValue * 1000;
+        return scaledFrequency;
     } else if (frequencyScale === "mHz") {
-        let scaledFrequence = frequencyValue * 1000000;
+        let scaledFrequency = frequencyValue * 1000000;
+        return scaledFrequency;
     } else {
-        let scaledFrequence = frequencyValue;
+        let scaledFrequency = frequencyValue;
+        return scaledFrequency;
     }
 }
 
@@ -101,16 +104,20 @@ function calculateScaledFrequency(frequencyValue, frequencyScale) {
  * Takes the scaled values and calculates the final resistance value
  */
 
-function calculateFinalResistance (scaledCapacitance, scaledFrequence) {
+function calculateFinalResistance (scaledCapacitance, scaledFrequency) {
+    let finalResistance = parseFloat(scaledCapacitance + scaledFrequency);
     console.log("Calculating final resistance");
+    console.log(finalResistance);
 }
 
 /**
  * Takes the scaled values and calculates the final capacitance value
  */
 
- function calculateFinalCapacitance (scaledResistance, scaledFrequence) {
+ function calculateFinalCapacitance (scaledFrequency, scaledResistance) {
+    let finalCapacitance = parseFloat(scaledFrequency + scaledResistance);
     console.log("Calculating final capacitance");
+    console.log(finalCapacitance);
 }
 
 /**
@@ -118,5 +125,8 @@ function calculateFinalResistance (scaledCapacitance, scaledFrequence) {
  */
 
  function calculateFinalFrequency (scaledCapacitance, scaledResistance) {
+    let finalFrequency = parseFloat(scaledCapacitance + scaledResistance);
     console.log("Calculating final frequency");
+    console.log(finalFrequency)
 }
+
