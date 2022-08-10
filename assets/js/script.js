@@ -108,6 +108,7 @@ function calculateFinalResistance (scaledCapacitance, scaledFrequency) {
     let finalResistance = 1 / ((2 * Math.PI) * scaledFrequency * scaledCapacitance);
     console.log("Calculating final resistance");
     console.log(finalResistance);
+    document.getElementById("answer").innerText = `Result in Ohm: ${finalResistance}`
 }
 
 /**
@@ -118,6 +119,7 @@ function calculateFinalResistance (scaledCapacitance, scaledFrequency) {
     let finalCapacitance = 1 / ((2 * Math.PI) * scaledResistance * scaledFrequency);
     console.log("Calculating final capacitance");
     console.log(finalCapacitance);
+    document.getElementById("answer").innerText = `Result in Farad: ${finalCapacitance}`
 }
 
 /**
@@ -128,5 +130,6 @@ function calculateFinalResistance (scaledCapacitance, scaledFrequency) {
     let finalFrequency = 1 / ((2 * Math.PI) * scaledResistance * scaledCapacitance);
     console.log("Calculating final frequency");
     console.log(finalFrequency);
+    document.getElementById("answer").innerText = `Result in Hz: ${finalFrequency}`
 }
 
