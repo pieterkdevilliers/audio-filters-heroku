@@ -1,0 +1,24 @@
+/* General styling */
+
+h1 {
+    text-align: center;
+}
+
+.filter-options {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
+
+.btn-primary {
+    height: 30px;
+    width: 300px;
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 15px;display: inline-block;
+    text-decoration: none;
+    font-size: 24px;
+}
