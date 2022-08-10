@@ -38,7 +38,7 @@ function receiveValues() {
     } else if (resistanceValue !== "0" && capacitanceValue !== "0" && frequencyValue === "0") {
         calculateFinalFrequency(scaledCapacitance, scaledResistance);
     } else {
-        console.log("Please complete two values")
+        alert("Please complete two values in order to calculate the third")
     }
 
 }
@@ -105,7 +105,7 @@ function calculateScaledFrequency(frequencyValue, frequencyScale) {
  */
 
 function calculateFinalResistance (scaledCapacitance, scaledFrequency) {
-    let finalResistance = 1 / ((2*Math.PI) * scaledFrequency * scaledCapacitance);
+    let finalResistance = 1 / ((2 * Math.PI) * scaledFrequency * scaledCapacitance);
     console.log("Calculating final resistance");
     console.log(finalResistance);
 }
@@ -115,7 +115,7 @@ function calculateFinalResistance (scaledCapacitance, scaledFrequency) {
  */
 
  function calculateFinalCapacitance (scaledFrequency, scaledResistance) {
-    let finalCapacitance = 1 / ((2*Math.PI) * scaledResistance * scaledFrequency);
+    let finalCapacitance = 1 / ((2 * Math.PI) * scaledResistance * scaledFrequency);
     console.log("Calculating final capacitance");
     console.log(finalCapacitance);
 }
@@ -125,7 +125,7 @@ function calculateFinalResistance (scaledCapacitance, scaledFrequency) {
  */
 
  function calculateFinalFrequency (scaledCapacitance, scaledResistance) {
-    let finalFrequency = 1 / ((2*Math.PI) * scaledResistance * scaledCapacitance);
+    let finalFrequency = 1 / ((2 * Math.PI) * scaledResistance * scaledCapacitance);
     console.log("Calculating final frequency");
     console.log(finalFrequency);
 }
