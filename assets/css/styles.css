@@ -28,14 +28,18 @@ footer {
     padding: 15px;
 }
 
+.answer {
+    text-align: center;
+    color: green;
+    font-size: 22px;
+}
+
 .calculate-button {
     height: 35px;
     width: 10%;
     background-color: green;
     border: none;
     color: white;
-    position: absolute;
-    margin: auto 45%;
 }
 
 .equation {
