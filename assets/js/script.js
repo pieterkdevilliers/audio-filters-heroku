@@ -20,13 +20,6 @@ function receiveValues() {
     let frequencyValue = document.getElementById("cut-off-frequency").value;
     let frequencyScale = document.getElementById("frequency-scale").value;
 
-    console.log(`${resistanceValue},
-    ${resistanceScale},
-    ${capacitanceValue},
-    ${capacitanceScale},
-    ${frequencyValue},
-    ${frequencyScale}`);
-
     let scaledResistance = parseFloat(calculateScaledResistance(resistanceValue, resistanceScale));
     let scaledCapacitance = parseFloat(calculateScaledCapacitance(capacitanceValue, capacitanceScale));
     let scaledFrequency = parseFloat(calculateScaledFrequency(frequencyValue, frequencyScale));
@@ -106,8 +99,6 @@ function calculateScaledFrequency(frequencyValue, frequencyScale) {
 
 function calculateFinalResistance (scaledCapacitance, scaledFrequency) {
     let finalResistance = 1 / ((2 * Math.PI) * scaledFrequency * scaledCapacitance);
-    console.log("Calculating final resistance");
-    console.log(finalResistance);
     document.getElementById("answer").innerText = `Result in Ohm: ${finalResistance}`
 }
 
@@ -117,8 +108,6 @@ function calculateFinalResistance (scaledCapacitance, scaledFrequency) {
 
  function calculateFinalCapacitance (scaledFrequency, scaledResistance) {
     let finalCapacitance = 1 / ((2 * Math.PI) * scaledResistance * scaledFrequency);
-    console.log("Calculating final capacitance");
-    console.log(finalCapacitance);
     document.getElementById("answer").innerText = `Result in Farad: ${finalCapacitance}`
 }
 
@@ -128,8 +117,6 @@ function calculateFinalResistance (scaledCapacitance, scaledFrequency) {
 
  function calculateFinalFrequency (scaledCapacitance, scaledResistance) {
     let finalFrequency = 1 / ((2 * Math.PI) * scaledResistance * scaledCapacitance);
-    console.log("Calculating final frequency");
-    console.log(finalFrequency);
     document.getElementById("answer").innerText = `Result in Hz: ${finalFrequency}`
 }
 
