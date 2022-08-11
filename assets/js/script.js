@@ -105,13 +105,13 @@ Checks result type to determine the scale value of the result ex: Ohm, kOhm or m
 */ 
 
     if (finalResistance > 999 && finalResistance < 999999) {
-        convertedResistance = (finalResistance / 1000);
+        convertedResistance = (finalResistance / 1000).toFixed(2);
         resultScale = "kOhm";
     } else if (finalResistance > 999999) {
-        convertedResistance = (finalResistance / 1000000);
+        convertedResistance = (finalResistance / 1000000).toFixed(2);
         resultScale = "mOhm"
     } else {
-        convertedResistance = finalResistance;
+        convertedResistance = finalResistance.toFixed(2);
         resultScale = "Ohm";
     }
     
