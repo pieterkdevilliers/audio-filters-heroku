@@ -127,18 +127,33 @@ Checks result type to determine the scale value of the result ex: pico, nano, mi
     let resultTypeMilli = resultString.includes("0.001") || resultString.includes("0.002") || resultString.includes("0.003") || resultString.includes("0.004") || resultString.includes("0.005") || resultString.includes("0.006") || resultString.includes("0.007") || resultString.includes("0.008") || resultString.includes("0.009") || resultString.includes("0.01") || resultString.includes("0.02") || resultString.includes("0.03") || resultString.includes("0.04") || resultString.includes("0.05") || resultString.includes("0.06") || resultString.includes("0.07") || resultString.includes("0.08") || resultString.includes("0.09") || resultString.includes("0.1") || resultString.includes("0.2") || resultString.includes("0.3") || resultString.includes("0.4") || resultString.includes("0.5") || resultString.includes("0.6") || resultString.includes("0.7") || resultString.includes("0.8") || resultString.includes("0.9");
     console.log("Result Type Milli, ", resultTypeMilli);
 
+
     if (resultTypePico) {
         console.log("pF result");
+        convertedCapacitance = (finalCapacitance * 1000000000000).toFixed(2);
+        resultScale = "pF"
+        console.log(convertedCapacitance);
     } else if (resultTypeNano) {
         console.log("nF result");
+        convertedCapacitance = (finalCapacitance * 1000000000).toFixed(2);
+        resultScale = "nF"
+        console.log(convertedCapacitance);
     } else if (resultTypeMicro) {
         console.log("uF result");
+        convertedCapacitance = (finalCapacitance * 1000000).toFixed(2);
+        resultScale = "uF"
+        console.log(convertedCapacitance);
     } else if (resultTypeMilli) {
         console.log("mF result");
+        convertedCapacitance = (finalCapacitance * 1000).toFixed(2);
+        resultScale = "mF"
+        console.log(convertedCapacitance);
     } else {
         console.log("F result");
+        convertedCapacitance = (finalCapacitance).toFixed(2);
+        resultScale = "F"
     }
-    document.getElementById("answer").innerText = `Result in Farad: ${finalCapacitance}`
+    document.getElementById("answer").innerText = `Result: ${convertedCapacitance}${resultScale} `;
 }
 
 /**
