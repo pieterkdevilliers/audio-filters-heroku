@@ -98,7 +98,7 @@ function calculateScaledFrequency(frequencyValue, frequencyScale) {
  */
 
 function calculateFinalResistance (scaledCapacitance, scaledFrequency) {
-    let finalResistance = 1 / ((2 * Math.PI) * scaledFrequency * scaledCapacitance);
+    let finalResistance = (1 / ((2 * Math.PI) * scaledFrequency * scaledCapacitance)).toFixed(2);
     document.getElementById("answer").innerText = `Result in Ohm: ${finalResistance}`
 }
 
@@ -161,7 +161,7 @@ Checks result type to determine the scale value of the result ex: pico, nano, mi
  */
 
  function calculateFinalFrequency (scaledCapacitance, scaledResistance) {
-    let finalFrequency = 1 / ((2 * Math.PI) * scaledResistance * scaledCapacitance);
+    let finalFrequency = (1 / ((2 * Math.PI) * scaledResistance * scaledCapacitance)).toFixed(2);
     document.getElementById("answer").innerText = `Result in Hz: ${finalFrequency}`
 }
 
