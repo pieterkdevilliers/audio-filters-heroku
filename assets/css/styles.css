@@ -1,55 +1,7 @@
 /* General styling */
 
-h1 {
-    text-align: center;
-}
+.heading {
+    display: flex;
+    justify-content: center;
 
-.filter-options {
-    text-align: center;
-}
-
-footer {
-    text-align: center;
-}
-
-.btn-primary {
-    height: 30px;
-    width: 300px;
-    background-color: blue;
-    color: white;
-    border: none;
-    padding: 15px;display: inline-block;
-    text-decoration: none;
-    font-size: 24px;
-}
-
-.value-inputs {
-    text-align: center;
-    padding: 15px;
-}
-
-.answer {
-    text-align: center;
-    color: green;
-    font-size: 22px;
-}
-
-.calculate-button {
-    height: 35px;
-    width: 10%;
-    background-color: green;
-    border: none;
-    color: white;
-}
-
-.equation {
-    text-align: center;
-}
-
-.filter-diagrams {
-    text-align: center;
-}
-
-img {
-    height: 250px;
 }
