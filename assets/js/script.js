@@ -99,7 +99,23 @@ function calculateScaledFrequency(frequencyValue, frequencyScale) {
 
 function calculateFinalResistance (scaledCapacitance, scaledFrequency) {
     let finalResistance = (1 / ((2 * Math.PI) * scaledFrequency * scaledCapacitance)).toFixed(2);
-    document.getElementById("answer").innerText = `Result in Ohm: ${finalResistance}`
+    
+/*
+Checks result type to determine the scale value of the result ex: Ohm, kOhm or mOhm.
+*/ 
+
+    if (finalResistance > 999 && finalResistance < 999999) {
+        convertedResistance = (finalResistance / 1000);
+        resultScale = "kOhm";
+    } else if (finalResistance > 999999) {
+        convertedResistance = (finalResistance / 1000000);
+        resultScale = "mOhm"
+    } else {
+        convertedResistance = finalResistance;
+        resultScale = "Ohm";
+    }
+    
+    document.getElementById("answer").innerText = `Result: ${convertedResistance}${resultScale} `;
 }
 
 /**
