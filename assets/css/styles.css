@@ -49,3 +49,7 @@ footer {
 .filter-diagrams {
     text-align: center;
 }
+
+img {
+    height: 250px;
+}
