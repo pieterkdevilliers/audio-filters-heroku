@@ -106,13 +106,13 @@ Checks result type to determine the scale value of the result ex: Ohm, kOhm or m
 
     if (finalResistance > 999 && finalResistance < 999999) {
         convertedResistance = (finalResistance / 1000).toFixed(2);
-        resultScale = "kOhm";
+        resultScale = "kΩ";
     } else if (finalResistance > 999999) {
         convertedResistance = (finalResistance / 1000000).toFixed(2);
-        resultScale = "mOhm"
+        resultScale = "mΩ"
     } else {
         convertedResistance = (finalResistance / 1).toFixed(2);
-        resultScale = "Ohm";
+        resultScale = "Ω";
     }
     
     document.getElementById("answer").innerText = `Result: ${convertedResistance}${resultScale} `;
@@ -155,9 +155,9 @@ Checks result type to determine the scale value of the result ex: pico, nano, mi
         resultScale = "nF"
         console.log(convertedCapacitance);
     } else if (resultTypeMicro) {
-        console.log("uF result");
+        console.log("μF result");
         convertedCapacitance = (finalCapacitance * 1000000).toFixed(2);
-        resultScale = "uF"
+        resultScale = "μF"
         console.log(convertedCapacitance);
     } else if (resultTypeMilli) {
         console.log("mF result");
