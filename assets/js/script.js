@@ -116,6 +116,7 @@ Checks result type to determine the scale value of the result ex: Ohm, kOhm or m
     }
     
     document.getElementById("answer").innerText = `Result: ${convertedResistance}${resultScale} `;
+    resetValues();
 }
 
 /**
@@ -151,6 +152,7 @@ Checks result type to determine the scale value of the result ex: pico, nano, mi
         resultScale = "F"
     }
     document.getElementById("answer").innerText = `Result: ${convertedCapacitance}${resultScale} `;
+    resetValues();
 }
 
 /**
@@ -176,5 +178,15 @@ if (finalFrequency > 999 && finalFrequency < 999999) {
 }
     
     document.getElementById("answer").innerText = `Result: ${convertedFrequency}${resultScale} `;
+    resetValues();
 }
 
+/**
+ * Resets all values to 0 after returning the result
+ */
+
+function resetValues () {
+    document.getElementById("resistance-value").value = "0";
+    document.getElementById("capacitance-value").value = "0";
+    document.getElementById("cut-off-frequency").value = "0";
+}
