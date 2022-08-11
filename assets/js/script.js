@@ -129,43 +129,24 @@ Checks result type to determine the scale value of the result ex: Ohm, kOhm or m
 Checks result type to determine the scale value of the result ex: pico, nano, micro etc...
 */    
     let resultString = finalCapacitance.toString();
-    console.log(resultString);
-
     let resultTypePico = resultString.includes("e-12") || resultString.includes("e-11") || resultString.includes("e-10");
-    console.log("Result Type Pico, ", resultTypePico);
-
     let resultTypeNano = resultString.includes("e-9") || resultString.includes("e-8") || resultString.includes("e-7");
-    console.log("Result Type Nano, ", resultTypeNano);
-
     let resultTypeMicro = resultString.includes("0.000001") || resultString.includes("0.000002") || resultString.includes("0.000003") || resultString.includes("0.000004") || resultString.includes("0.000005") || resultString.includes("0.000006") || resultString.includes("0.000007") || resultString.includes("0.000008") || resultString.includes("0.000009") || resultString.includes("0.00001") || resultString.includes("0.00002") || resultString.includes("0.00003") || resultString.includes("0.00004") || resultString.includes("0.00005") || resultString.includes("0.00006") || resultString.includes("0.00007") || resultString.includes("0.00008") || resultString.includes("0.00009") || resultString.includes("0.0001") || resultString.includes("0.0002") || resultString.includes("0.0003") || resultString.includes("0.0004") || resultString.includes("0.0005") || resultString.includes("0.0006") || resultString.includes("0.0007") || resultString.includes("0.0008") || resultString.includes("0.0009");
-    console.log("Result Type Micro, ", resultTypeMicro);
-
     let resultTypeMilli = resultString.includes("0.001") || resultString.includes("0.002") || resultString.includes("0.003") || resultString.includes("0.004") || resultString.includes("0.005") || resultString.includes("0.006") || resultString.includes("0.007") || resultString.includes("0.008") || resultString.includes("0.009") || resultString.includes("0.01") || resultString.includes("0.02") || resultString.includes("0.03") || resultString.includes("0.04") || resultString.includes("0.05") || resultString.includes("0.06") || resultString.includes("0.07") || resultString.includes("0.08") || resultString.includes("0.09") || resultString.includes("0.1") || resultString.includes("0.2") || resultString.includes("0.3") || resultString.includes("0.4") || resultString.includes("0.5") || resultString.includes("0.6") || resultString.includes("0.7") || resultString.includes("0.8") || resultString.includes("0.9");
-    console.log("Result Type Milli, ", resultTypeMilli);
-
 
     if (resultTypePico) {
-        console.log("pF result");
         convertedCapacitance = (finalCapacitance * 1000000000000).toFixed(2);
         resultScale = "pF"
-        console.log(convertedCapacitance);
     } else if (resultTypeNano) {
-        console.log("nF result");
         convertedCapacitance = (finalCapacitance * 1000000000).toFixed(2);
         resultScale = "nF"
-        console.log(convertedCapacitance);
     } else if (resultTypeMicro) {
-        console.log("μF result");
         convertedCapacitance = (finalCapacitance * 1000000).toFixed(2);
         resultScale = "μF"
-        console.log(convertedCapacitance);
     } else if (resultTypeMilli) {
-        console.log("mF result");
         convertedCapacitance = (finalCapacitance * 1000).toFixed(2);
         resultScale = "mF"
-        console.log(convertedCapacitance);
     } else {
-        console.log("F result");
         convertedCapacitance = (finalCapacitance * 1).toFixed(2);
         resultScale = "F"
     }
