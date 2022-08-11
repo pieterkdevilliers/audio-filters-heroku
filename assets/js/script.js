@@ -111,7 +111,7 @@ Checks result type to determine the scale value of the result ex: Ohm, kOhm or m
         convertedResistance = (finalResistance / 1000000).toFixed(2);
         resultScale = "mOhm"
     } else {
-        convertedResistance = finalResistance.toFixed(2);
+        convertedResistance = (finalResistance / 1).toFixed(2);
         resultScale = "Ohm";
     }
     
@@ -166,7 +166,7 @@ Checks result type to determine the scale value of the result ex: pico, nano, mi
         console.log(convertedCapacitance);
     } else {
         console.log("F result");
-        convertedCapacitance = (finalCapacitance).toFixed(2);
+        convertedCapacitance = (finalCapacitance * 1).toFixed(2);
         resultScale = "F"
     }
     document.getElementById("answer").innerText = `Result: ${convertedCapacitance}${resultScale} `;
@@ -178,6 +178,22 @@ Checks result type to determine the scale value of the result ex: pico, nano, mi
 
  function calculateFinalFrequency (scaledCapacitance, scaledResistance) {
     let finalFrequency = (1 / ((2 * Math.PI) * scaledResistance * scaledCapacitance)).toFixed(2);
-    document.getElementById("answer").innerText = `Result in Hz: ${finalFrequency}`
+
+/*
+Checks result type to determine the scale value of the result ex: Ohm, kOhm or mOhm.
+*/ 
+
+if (finalFrequency > 999 && finalFrequency < 999999) {
+    convertedFrequency = (finalFrequency / 1000).toFixed(2);
+    resultScale = "kHz";
+} else if (finalFrequency > 999999) {
+    convertedFrequency = (finalFrequency / 1000000).toFixed(2);
+    resultScale = "mHz"
+} else {
+    convertedFrequency = (finalFrequency / 1).toFixed(2);
+    resultScale = "Hz";
+}
+    
+    document.getElementById("answer").innerText = `Result: ${convertedFrequency}${resultScale} `;
 }
 
