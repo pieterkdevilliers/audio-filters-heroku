@@ -1,7 +1,33 @@
 /* General styling */
 
+/* Center Heading Title Text */
+
 .heading {
     display: flex;
     justify-content: center;
 
+}
+
+/* Set Filter Option button spacings */
+
+.filter-options {
+    display: flex;
+    justify-content: space-around;
+}
+
+.value-inputs {
+    display: flex;
+    justify-content: center;
+}
+
+.answer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
