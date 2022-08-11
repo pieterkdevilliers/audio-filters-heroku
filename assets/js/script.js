@@ -127,17 +127,17 @@ Checks result type to determine the scale value of the result ex: pico, nano, mi
     let resultTypeMilli = resultString.includes("0.001") || resultString.includes("0.002") || resultString.includes("0.003") || resultString.includes("0.004") || resultString.includes("0.005") || resultString.includes("0.006") || resultString.includes("0.007") || resultString.includes("0.008") || resultString.includes("0.009") || resultString.includes("0.01") || resultString.includes("0.02") || resultString.includes("0.03") || resultString.includes("0.04") || resultString.includes("0.05") || resultString.includes("0.06") || resultString.includes("0.07") || resultString.includes("0.08") || resultString.includes("0.09") || resultString.includes("0.1") || resultString.includes("0.2") || resultString.includes("0.3") || resultString.includes("0.4") || resultString.includes("0.5") || resultString.includes("0.6") || resultString.includes("0.7") || resultString.includes("0.8") || resultString.includes("0.9");
     console.log("Result Type Milli, ", resultTypeMilli);
 
-    // if (finalCapacitance.includes("e-12" || "e-11" || "e-10")) {
-    //     console.log("pF result");
-    // } else if (finalCapacitance.includes("e-9" || "e-8" || "e-7")) {
-    //     console.log("nF result");
-    // } else if (finalCapacitance.includes("0.000001" || "0.000002" || "0.000003" || "0.000004" || "0.000005" || "0.000006" || "0.000007" || "0.000008" || "0.000009" || "0.00001" || "0.00002" || "0.00003" || "0.00004" || "0.00005" || "0.00006" || "0.00007" || "0.00008" || "0.00009" || "0.0001" || "0.0002" || "0.0003" || "0.0004" || "0.0005" || "0.0006" || "0.0007" || "0.0008" || "0.0009" )) {
-    //     console.log("uF result");
-    // } else if ( finalCapacitance.includes("0.1" || "0.2" || "0.3" || "0.4" || "0.5" || "0.6" || "0.7" || "0.8" || "0.9" || "0.01" || "0.02" || "0.03" || "0.04" || "0.05" || "0.06" || "0.07" || "0.08" || "0.09" || "0.001" || "0.002" || "0.003" || "0.004" || "0.005" || "0.006" || "0.007" || "0.008" || "0.009")) {
-    //     console.log("mF result");
-    // } else {
-    //     console.log("F result");
-    // }
+    if (resultTypePico) {
+        console.log("pF result");
+    } else if (resultTypeNano) {
+        console.log("nF result");
+    } else if (resultTypeMicro) {
+        console.log("uF result");
+    } else if (resultTypeMilli) {
+        console.log("mF result");
+    } else {
+        console.log("F result");
+    }
     document.getElementById("answer").innerText = `Result in Farad: ${finalCapacitance}`
 }
 
