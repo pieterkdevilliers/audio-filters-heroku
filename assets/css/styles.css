@@ -4,7 +4,7 @@ body > * {
     display: flex;
 }
 
-/* Center Heading Title Text */
+/* Center Heading & Description title text */
 
 .heading {
     justify-content: center;
@@ -14,18 +14,23 @@ body > * {
 .description {
     justify-content: center;
 
+
 }
 
-/* Set Filter Option button spacings */
+/* Set Filter Option and Value Inputs spacings */
 
 .filter-options {
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .value-inputs {
     justify-content: center;
     gap: 1rem;
+    flex-wrap: wrap;
 }
+
+/* Adjust position of Answer and Calculate Button */
 
 .calculate-button {
     justify-content: center;
@@ -37,9 +42,12 @@ body > * {
     gap: 1rem;
 }
 
+/* Set Equation and Legend positioning & size */
+
 .equation {
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .equation > img {
@@ -51,9 +59,12 @@ body > * {
     align-items: center;
 }
 
+/* Set Filter Diagrams positioning & size */
+
 .filter-diagrams {
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .filter-diagrams > img {
