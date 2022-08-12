@@ -31,12 +31,12 @@ body > * {
 }
 
 .value-inputs > * {
-    flex-shrink: 0;
+    flex-shrink: 1;
 }
 
 .input-direct {
-    flex-wrap: wrap;
-    flex-shrink: 0;
+    flex-wrap: nowrap;
+    flex-shrink: 1;
 }
 
 /* Adjust position of Answer and Calculate Button */
@@ -49,6 +49,7 @@ body > * {
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    font-size: xx-large;
 }
 
 /* Set Equation and Legend positioning & size */
@@ -60,12 +61,13 @@ body > * {
 }
 
 .equation > img {
-    width: 300px;
+    width: 50%;
 }
 
 .equation-legend {
-    justify-content: center;
-    align-items: center;
+    justify-content:space-around;
+    align-items:center;
+    font-size: x-large;
 }
 
 /* Set Filter Diagrams positioning & size */
@@ -77,7 +79,7 @@ body > * {
 }
 
 .filter-diagrams > img {
-    width: 300px;
+    width: 30%;
 }
 
 .footer {
