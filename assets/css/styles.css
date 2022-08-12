@@ -11,6 +11,11 @@ body > * {
 
 }
 
+.description {
+    justify-content: center;
+
+}
+
 /* Set Filter Option button spacings */
 
 .filter-options {
