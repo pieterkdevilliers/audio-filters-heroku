@@ -30,6 +30,15 @@ body > * {
     flex-wrap: wrap;
 }
 
+.value-inputs > * {
+    flex-shrink: 0;
+}
+
+.input-direct {
+    flex-wrap: wrap;
+    flex-shrink: 0;
+}
+
 /* Adjust position of Answer and Calculate Button */
 
 .calculate-button {
