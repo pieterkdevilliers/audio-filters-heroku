@@ -47,6 +47,7 @@ body > * {
 
 .calculate-button {
     justify-content: center;
+    font-size: x-large;
 }
 
 .answer {
