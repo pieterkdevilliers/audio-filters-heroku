@@ -24,6 +24,10 @@ body > * {
     flex-wrap: wrap;
 }
 
+.filter-options > a {
+    padding: 1rem;
+}
+
 .value-inputs {
     justify-content: center;
     gap: 1rem;
