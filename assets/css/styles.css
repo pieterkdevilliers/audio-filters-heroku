@@ -8,7 +8,16 @@ body > * {
 
 .heading {
     justify-content: center;
+    text-align: center;
 
+}
+
+h1 {
+    color: #3fb5a3;
+}
+
+h2 {
+    color: #3fb5a3;
 }
 
 .description {
