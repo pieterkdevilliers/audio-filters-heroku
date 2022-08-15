@@ -43,10 +43,21 @@ h2 {
     color: white;
 }
 
+.active {
+    background-color: white;
+    color: #3fb5a3;
+}
+
+
 .btn-primary {
     background-color: #3fb5a3;
     height: auto;
     margin-bottom: 0.5rem;
+}
+
+.btn-primary:hover {
+    background-color: white;
+    color: #3fb5a3;
 }
 
 .value-inputs {
