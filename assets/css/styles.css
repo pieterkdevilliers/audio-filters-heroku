@@ -84,6 +84,19 @@ h2 {
 .calculate-button {
     justify-content: center;
     font-size: x-large;
+    margin-bottom: 00.5rem;
+}
+
+.calculate-button > button {
+    color: white;
+    background-color: #3fb5a3;
+    border: none;
+}
+
+.calculate-button > button:hover {
+    color:#3fb5a3;
+    background-color: white;
+    border: #3fb5a3; 
 }
 
 .answer {
@@ -91,6 +104,10 @@ h2 {
     align-items: center;
     gap: 1rem;
     font-size: xx-large;
+}
+
+.answer > p {
+    color: #3fb5a3;
 }
 
 /* Set Equation and Legend positioning & size */
@@ -115,6 +132,7 @@ h2 {
     flex-wrap: nowrap;
     flex-shrink: 1;
     padding: 00.5rem;
+    color: #3fb5a3;
 }
 
 /* Set Filter Diagrams positioning & size */
