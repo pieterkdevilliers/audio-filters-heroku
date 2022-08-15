@@ -90,6 +90,24 @@ h2 {
 
 /* Adjust layout for individual Input Value Pairs */
 
+.input-direct > div {
+    display: flex;
+}
+
+.input-direct label,
+.input-direct input,
+.input-direct select {
+    width: 50%;
+}
+
+.input-direct select {
+    width: 200px;
+}
+
+.input-direct input {
+    width: 191px;
+}
+
 .resistance {
     padding: 0.5rem;
 }
@@ -193,6 +211,20 @@ h2 {
         display: flex;
         flex-direction: column;
     }
+
+    .input-direct label,
+    .input-direct input,
+    .input-direct select {
+    width: 100%;
+}
+
+.input-direct input {
+    width: 176px;
+}
+
+    .input-direct select {
+    width: 100%;
+}
 
     .equation-legend {
         display: flex;
