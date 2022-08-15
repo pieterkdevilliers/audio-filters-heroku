@@ -43,7 +43,12 @@ h2 {
     color: white;
 }
 
-.active {
+#lp-active {
+    background-color: white;
+    color: #3fb5a3;
+}
+
+#hp-active {
     background-color: white;
     color: #3fb5a3;
 }
