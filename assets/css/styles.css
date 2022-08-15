@@ -62,17 +62,17 @@ h3 {
 
 #lp-active {
     background-color: white;
-    color: #42BDAA;
+    color: #43bea9;
 }
 
 #hp-active {
     background-color: white;
-    color: #42BDAA;
+    color: #43bea9;
 }
 
 
 .btn-primary {
-    background-color: #3fb5a3;
+    background-color: #43bea9;
     height: auto;
     margin-bottom: 0.5rem;
     border-radius: 5px;
@@ -80,14 +80,14 @@ h3 {
 
 .btn-primary:hover {
     background-color: white;
-    color: #42BDAA;
+    color: #43bea9;
 }
 
 .value-inputs {
     justify-content: center;
     gap: 1rem;
     flex-wrap: wrap;
-    color: #42BDAA;
+    color: #43bea9;
     margin-top: 3rem;
     margin-bottom: 1rem;
     border: 1px solid #42BDAA;
@@ -119,13 +119,13 @@ h3 {
 
 .input-direct select {
     width: 200px;
-    color: #42BDAA;
+    color: #43bea9;
     font-weight: bold;
 }
 
 .input-direct input {
     width: 191px;
-    color: #42BDAA;
+    color: #43bea9;
     font-weight: bold;
 }
 
@@ -153,14 +153,14 @@ h3 {
 
 .calculate-button > button {
     color: white;
-    background-color: #42BDAA;
+    background-color: #43bea9;
     border: none;
 }
 
 .calculate-button > button:hover {
-    color:#42BDAA;
+    color:#43bea9;
     background-color: white;
-    border: #42BDAA; 
+    border: #43bea9; 
 }
 
 .answer {
@@ -171,7 +171,7 @@ h3 {
 }
 
 .answer > p {
-    color: #3fb5a3;
+    color: #43bea9;
     font-family: Lato, sans-serif;
 }
 
