@@ -53,6 +53,7 @@ h2 {
     justify-content: center;
     gap: 1rem;
     flex-wrap: wrap;
+    color: #3fb5a3;
 }
 
 .value-inputs > * {
