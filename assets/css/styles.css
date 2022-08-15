@@ -104,10 +104,33 @@ body > * {
 }
 
 .filter-diagrams > img {
-    width: 30%;
+    min-width: 250px;
 }
 
 .footer {
     justify-content: center;
     align-items: flex-end;
+}
+
+/* media queries*/
+
+/* for screen size from 400px wide and down */
+@media screen and (max-width: 399.98px) {
+
+    .input-direct > div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .equation-legend {
+        display: flex;
+        flex-direction: column;
+        padding: 0.1rem;
+    }
+
+    .equation-legend > p {
+        padding: 0.1rem;
+        margin: 0.5rem;
+        text-align: center;
+    }
 }
