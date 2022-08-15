@@ -1,5 +1,9 @@
 /* General styling */
 
+body {
+    background-color: #231a1a;
+}
+
 body > * {
     display: flex;
 }
