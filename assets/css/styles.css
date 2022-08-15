@@ -73,6 +73,10 @@ h2 {
     gap: 1rem;
     flex-wrap: wrap;
     color: #3fb5a3;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    border: 1px solid #3fb5a3;
+    padding: 1rem;
 }
 
 .value-inputs > * {
