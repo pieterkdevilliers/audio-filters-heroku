@@ -223,6 +223,7 @@ h3 {
 .footer {
     justify-content: center;
     align-items: flex-end;
+    color: #3fb5a3;
 }
 
 /* media queries*/
