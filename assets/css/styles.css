@@ -40,6 +40,13 @@ h2 {
 
 .filter-options > a {
     padding: 1rem;
+    color: white;
+}
+
+.btn-primary {
+    background-color: #3fb5a3;
+    height: auto;
+    margin-bottom: 0.5rem;
 }
 
 .value-inputs {
