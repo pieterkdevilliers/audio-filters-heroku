@@ -24,11 +24,11 @@
         <div class="input-direct">
             <div class="resistance">
                 <label for="resistance-value">Resistance Value</label>
-                <input type="number" name="Resistance Value" id="resistance-value">
+                <input type="number" name="Resistance Value" id="resistance-value" aria-label="Enter the known resistance value here">
             </div>
             <div class="resistance">
                 <label for="resistance-scale">Resistance Scale</label>
-                <select name="Resistance Scale" id="resistance-scale">
+                <select name="Resistance Scale" id="resistance-scale" aria-label="Select the correct Resistance Unit Scale">
                     <option value="ohm">Ω (ohm)</option>
                     <option value="kohm">kΩ (kilo-ohm)</option>
                     <option value="mohm">mΩ (mega-ohm)</option>
@@ -38,11 +38,11 @@
         <div class="input-direct">
             <div class="capacitance">
                 <label for="capacitance-value">Capacitance Value</label>
-                <input type="number" name="Capacitance Value" id="capacitance-value">
+                <input type="number" name="Capacitance Value" id="capacitance-value" aria-label="Enter the known capacitance value here">
             </div>
             <div class="capacitance">
                 <label for="capacitance-scale">Capacitance Scale</label>
-                <select name="Capacitance Scale" id="capacitance-scale">
+                <select name="Capacitance Scale" id="capacitance-scale" aria-label="Select the correct Capacitance Unit Scale">
                     <option value="F">F (farads)</option>
                     <option value="mF">mF (millifarads)</option>
                     <option value="uF">μF (microfarads)</option>
@@ -54,11 +54,11 @@
         <div class="input-direct">
             <div class="frequency">
                 <label for="cut-off-frequency">Cutt-off Frequency</label>
-                <input type="number" name="Cut-off Frequency" id="cut-off-frequency">
+                <input type="number" name="Cut-off Frequency" id="cut-off-frequency" aria-label="Enter the known cut-off frequency value here">
             </div>
             <div class="frequency">
                 <label for="frequency-scale">Frequency Scale</label>
-                <select name="Frequency Scale" id="frequency-scale">
+                <select name="Frequency Scale" id="frequency-scale" aria-label="Select the correct Cut-off Frequency Unit Scale">
                     <option value="Hz">Hz (hertz)</option>
                     <option value="kHz">kHz (kilo-hertz)</option>
                     <option value="mHz">mHz (mega-hertz)</option>
@@ -67,13 +67,13 @@
         </div>
         </div>
     <div class="answer">
-        <p id = "answer"></p>
+        <p id = "answer" aria-label="The calculated result will be displayed here"></p>
     </div>
     <div class="calculate-button">
-        <button onclick="receiveValues()" class="calculate-button">Calculate</button>
+        <button onclick="receiveValues()" class="calculate-button" aria-label="Click here to calculate and return the required calculated value">Calculate</button>
     </div>
     <div class="equation">
-        <img src="./assets/images/fc-equation.png" alt="Low Pass Filter Equation" class="equation-diagram">
+        <img src="./assets/images/fc-equation.png" alt="Low Pass Filter Equation" class="equation-diagram" aria-label="The formula used in the calculation is fc = 1 / (2*π*R*C)">
     </div>
     <div class="equation-legend">
         <p>R = Resistance</p>
