@@ -43,6 +43,20 @@ body > * {
     flex-shrink: 1;
 }
 
+/* Adjust layout for individual Input Value Pairs */
+
+.resistance {
+    padding: 0.5rem;
+}
+
+.capacitance {
+    padding: 0.5rem;
+}
+
+.frequency {
+    padding: 0.5rem;
+}
+
 /* Adjust position of Answer and Calculate Button */
 
 .calculate-button {
@@ -66,13 +80,19 @@ body > * {
 }
 
 .equation > img {
-    width: 50%;
+    min-width: 250px;
 }
 
 .equation-legend {
     justify-content:space-around;
     align-items:center;
     font-size: x-large;
+}
+
+.equation-legend > p {
+    flex-wrap: nowrap;
+    flex-shrink: 1;
+    padding: 00.5rem;
 }
 
 /* Set Filter Diagrams positioning & size */
