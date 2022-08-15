@@ -24,6 +24,10 @@ h2 {
     color: #3fb5a3;
 }
 
+h3 {
+    color: white;
+}
+
 .description {
     justify-content: center;
     text-align: center;
