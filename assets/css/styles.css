@@ -41,6 +41,7 @@ h2 {
 .filter-options > a {
     padding: 1rem;
     color: white;
+    font-size: x-large;
 }
 
 #lp-active {
@@ -58,6 +59,7 @@ h2 {
     background-color: #3fb5a3;
     height: auto;
     margin-bottom: 0.5rem;
+    border-radius: 5px;
 }
 
 .btn-primary:hover {
@@ -101,6 +103,8 @@ h2 {
     justify-content: center;
     font-size: x-large;
     margin-bottom: 00.5rem;
+    padding: 1rem;
+    border-radius: 5px;
 }
 
 .calculate-button > button {
