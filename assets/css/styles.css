@@ -102,10 +102,14 @@ h2 {
 
 .input-direct select {
     width: 200px;
+    color: #3fb5a3;
+    font-weight: bold;
 }
 
 .input-direct input {
     width: 191px;
+    color: #3fb5a3;
+    font-weight: bold;
 }
 
 .resistance {
