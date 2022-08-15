@@ -22,12 +22,12 @@ body > * {
 }
 
 h1 {
-    color: #3fb5a3;
+    color: #42BDAA;
     font-family: Lato, sans-serif;
 }
 
 h2 {
-    color: #3fb5a3;
+    color: #42BDAA;
     font-family: Lato, sans-serif;
 }
 
@@ -62,12 +62,12 @@ h3 {
 
 #lp-active {
     background-color: white;
-    color: #3fb5a3;
+    color: #42BDAA;
 }
 
 #hp-active {
     background-color: white;
-    color: #3fb5a3;
+    color: #42BDAA;
 }
 
 
@@ -80,17 +80,17 @@ h3 {
 
 .btn-primary:hover {
     background-color: white;
-    color: #3fb5a3;
+    color: #42BDAA;
 }
 
 .value-inputs {
     justify-content: center;
     gap: 1rem;
     flex-wrap: wrap;
-    color: #3fb5a3;
+    color: #42BDAA;
     margin-top: 3rem;
     margin-bottom: 1rem;
-    border: 1px solid #3fb5a3;
+    border: 1px solid #42BDAA;
     padding: 1rem;
     font-family: Lato, sans-serif;
     font-size: large;
@@ -119,13 +119,13 @@ h3 {
 
 .input-direct select {
     width: 200px;
-    color: #3fb5a3;
+    color: #42BDAA;
     font-weight: bold;
 }
 
 .input-direct input {
     width: 191px;
-    color: #3fb5a3;
+    color: #42BDAA;
     font-weight: bold;
 }
 
@@ -153,14 +153,14 @@ h3 {
 
 .calculate-button > button {
     color: white;
-    background-color: #3fb5a3;
+    background-color: #42BDAA;
     border: none;
 }
 
 .calculate-button > button:hover {
-    color:#3fb5a3;
+    color:#42BDAA;
     background-color: white;
-    border: #3fb5a3; 
+    border: #42BDAA; 
 }
 
 .answer {
@@ -202,7 +202,7 @@ h3 {
     flex-wrap: nowrap;
     flex-shrink: 1;
     padding: 00.5rem;
-    color: #3fb5a3;
+    color: #42BDAA;
 }
 
 /* Set Filter Diagrams positioning & size */
@@ -223,7 +223,7 @@ h3 {
 .footer {
     justify-content: center;
     align-items: flex-end;
-    color: #3fb5a3;
+    color: #42BDAA;
 }
 
 /* media queries*/
