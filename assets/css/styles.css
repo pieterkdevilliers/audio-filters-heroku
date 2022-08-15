@@ -1,3 +1,7 @@
+/* Import Google Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+
 /* General styling */
 
 body {
@@ -13,26 +17,32 @@ body > * {
 .heading {
     justify-content: center;
     text-align: center;
+    font-family: Lato, sans-serif;
 
 }
 
 h1 {
     color: #3fb5a3;
+    font-family: Lato, sans-serif;
 }
 
 h2 {
     color: #3fb5a3;
+    font-family: Lato, sans-serif;
 }
 
 h3 {
     color: white;
+    font-family: Lato, sans-serif;
 }
 
 .description {
     justify-content: center;
     text-align: center;
+}
 
-
+.description h2 {
+    color: white;
 }
 
 /* Set Filter Option and Value Inputs spacings */
@@ -47,6 +57,7 @@ h3 {
     color: white;
     font-size: x-large;
     text-decoration: none;
+    font-family: Lato, sans-serif;
 }
 
 #lp-active {
@@ -81,6 +92,8 @@ h3 {
     margin-bottom: 1rem;
     border: 1px solid #3fb5a3;
     padding: 1rem;
+    font-family: Lato, sans-serif;
+    font-size: large;
 }
 
 .value-inputs > * {
@@ -159,6 +172,7 @@ h3 {
 
 .answer > p {
     color: #3fb5a3;
+    font-family: Lato, sans-serif;
 }
 
 /* Set Equation and Legend positioning & size */
@@ -181,6 +195,7 @@ h3 {
     font-size: x-large;
     border-bottom: 1px solid white;
     margin-bottom: 1rem;
+    font-family: Lato, sans-serif;
 }
 
 .equation-legend > p {
