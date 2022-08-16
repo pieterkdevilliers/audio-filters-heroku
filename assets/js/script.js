@@ -124,17 +124,78 @@ Checks result type to determine the scale value of the result ex: Ohm, kOhm or m
  */
 
  function calculateFinalCapacitance (scaledFrequency, scaledResistance) {
-    let finalCapacitance = 1 / ((2 * Math.PI) * scaledResistance * scaledFrequency);
+    finalCapacitance = 1 / ((2 * Math.PI) * scaledResistance * scaledFrequency);
 
 /*
 Checks result type to determine the scale value of the result ex: pico, nano, micro etc...
 */    
-    let resultString = finalCapacitance.toString();
-    let resultTypePico = resultString.includes("e-12") || resultString.includes("e-11") || resultString.includes("e-10");
-    let resultTypeNano = resultString.includes("e-9") || resultString.includes("e-8") || resultString.includes("e-7");
-    let resultTypeMicro = resultString.includes("0.000001") || resultString.includes("0.000002") || resultString.includes("0.000003") || resultString.includes("0.000004") || resultString.includes("0.000005") || resultString.includes("0.000006") || resultString.includes("0.000007") || resultString.includes("0.000008") || resultString.includes("0.000009") || resultString.includes("0.00001") || resultString.includes("0.00002") || resultString.includes("0.00003") || resultString.includes("0.00004") || resultString.includes("0.00005") || resultString.includes("0.00006") || resultString.includes("0.00007") || resultString.includes("0.00008") || resultString.includes("0.00009") || resultString.includes("0.0001") || resultString.includes("0.0002") || resultString.includes("0.0003") || resultString.includes("0.0004") || resultString.includes("0.0005") || resultString.includes("0.0006") || resultString.includes("0.0007") || resultString.includes("0.0008") || resultString.includes("0.0009");
-    let resultTypeMilli = resultString.includes("0.001") || resultString.includes("0.002") || resultString.includes("0.003") || resultString.includes("0.004") || resultString.includes("0.005") || resultString.includes("0.006") || resultString.includes("0.007") || resultString.includes("0.008") || resultString.includes("0.009") || resultString.includes("0.01") || resultString.includes("0.02") || resultString.includes("0.03") || resultString.includes("0.04") || resultString.includes("0.05") || resultString.includes("0.06") || resultString.includes("0.07") || resultString.includes("0.08") || resultString.includes("0.09") || resultString.includes("0.1") || resultString.includes("0.2") || resultString.includes("0.3") || resultString.includes("0.4") || resultString.includes("0.5") || resultString.includes("0.6") || resultString.includes("0.7") || resultString.includes("0.8") || resultString.includes("0.9");
+    resultString = finalCapacitance.toString();
+    
+    // let resultTypePico = "";
+    // let resultTypeNano = "";
+    // let resultTypeMicro = "";
+    // let resultTypeMilli = "";
+    
+    picoValues = ["e-12", "e-11", "e-10"];
+    picoValues.forEach(comparePicoArray);
 
+    nanoValues = ["e-9", "e-8", "e-7"];
+    nanoValues.forEach(compareNanoArray);
+
+    microValues = ["0.000001", "0.000002", "0.000003", "0.000004", "0.000005", "0.000006", "0.000007", "0.000008", "0.000009", "0.00001", "0.00002", "0.00003", "0.00004", "0.00005", "0.00006", "0.00007", "0.00008", "0.00009", "0.0001", "0.0002", "0.0003", "0.0004", "0.0005", "0.0006", "0.0007", "0.0008", "0.0009"];
+    microValues.forEach(compareMicroArray);
+
+    milliValues = ["0.001", "0.002", "0.003", "0.004", "0.005", "0.006", "0.007", "0.008", "0.009", "0.01", "0.02", "0.03", "0.04", "0.05", "0.06", "0.07", "0.08", "0.09", "0.1", "0.2", "0.3", "0.4", "0.5", "0.6", "0.7", "0.8", "0.9"];
+    milliValues.forEach(compareMilliArray);
+}
+
+/** Compares the result string to the items in the array - picoValues. If resultTypePico is true, the the function capacitanceScaleCalculation is called */
+function comparePicoArray(item) {
+    console.log("Value is " + item);
+    resultTypePico = resultString.includes(item);
+    console.log("Result Type Pico is " + resultTypePico);
+
+    if (resultTypePico) {
+        capacitanceScaleCalculation(resultString);
+    } 
+}
+
+/** Compares the result string to the items in the array - nanoValues. If resultTypeNano is true, the the function capacitanceScaleCalculation is called */
+function compareNanoArray(item) {
+    console.log("Value is " + item);
+    resultTypeNano = resultString.includes(item);
+    console.log("Result Type Nano is " + resultTypeNano);
+
+    if (resultTypeNano) {
+        capacitanceScaleCalculation(resultString);
+    } 
+}
+
+/** Compares the result string to the items in the array - microValues. If resultTypeMicro is true, the the function capacitanceScaleCalculation is called */
+function compareMicroArray(item) {
+    console.log("Value is " + item);
+    resultTypeMicro = resultString.includes(item);
+    console.log("Result Type Micro is " + resultTypeMicro);
+
+    if (resultTypeMicro) {
+        capacitanceScaleCalculation(resultString);
+    } 
+}
+
+/** Compares the result string to the items in the array - milliValues. If resultTypeMilli is true, the the function capacitanceScaleCalculation is called */
+function compareMilliArray(item) {
+    console.log("Value is " + item);
+    resultTypeMilli = resultString.includes(item);
+    console.log("Result Type Milli is " + resultTypeMilli);
+
+    if (resultTypeMilli) {
+        capacitanceScaleCalculation(resultString);
+    } 
+}
+
+/** If Else statements for correctly identifying the final capacitance value and unit */
+
+function capacitanceScaleCalculation () {
     if (resultTypePico) {
         convertedCapacitance = (finalCapacitance * 1000000000000).toFixed(2);
         resultScale = "pF"
