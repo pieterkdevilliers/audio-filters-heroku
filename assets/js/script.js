@@ -131,11 +131,6 @@ Checks result type to determine the scale value of the result ex: pico, nano, mi
 */    
     resultString = finalCapacitance.toString();
     
-    // let resultTypePico = "";
-    // let resultTypeNano = "";
-    // let resultTypeMicro = "";
-    // let resultTypeMilli = "";
-    
     picoValues = ["e-12", "e-11", "e-10"];
     picoValues.forEach(comparePicoArray);
 
@@ -151,9 +146,7 @@ Checks result type to determine the scale value of the result ex: pico, nano, mi
 
 /** Compares the result string to the items in the array - picoValues. If resultTypePico is true, the the function capacitanceScaleCalculation is called */
 function comparePicoArray(item) {
-    console.log("Value is " + item);
     resultTypePico = resultString.includes(item);
-    console.log("Result Type Pico is " + resultTypePico);
 
     if (resultTypePico) {
         capacitanceScaleCalculation(resultString);
@@ -162,9 +155,7 @@ function comparePicoArray(item) {
 
 /** Compares the result string to the items in the array - nanoValues. If resultTypeNano is true, the the function capacitanceScaleCalculation is called */
 function compareNanoArray(item) {
-    console.log("Value is " + item);
     resultTypeNano = resultString.includes(item);
-    console.log("Result Type Nano is " + resultTypeNano);
 
     if (resultTypeNano) {
         capacitanceScaleCalculation(resultString);
@@ -173,9 +164,7 @@ function compareNanoArray(item) {
 
 /** Compares the result string to the items in the array - microValues. If resultTypeMicro is true, the the function capacitanceScaleCalculation is called */
 function compareMicroArray(item) {
-    console.log("Value is " + item);
     resultTypeMicro = resultString.includes(item);
-    console.log("Result Type Micro is " + resultTypeMicro);
 
     if (resultTypeMicro) {
         capacitanceScaleCalculation(resultString);
@@ -184,9 +173,7 @@ function compareMicroArray(item) {
 
 /** Compares the result string to the items in the array - milliValues. If resultTypeMilli is true, the the function capacitanceScaleCalculation is called */
 function compareMilliArray(item) {
-    console.log("Value is " + item);
     resultTypeMilli = resultString.includes(item);
-    console.log("Result Type Milli is " + resultTypeMilli);
 
     if (resultTypeMilli) {
         capacitanceScaleCalculation(resultString);
