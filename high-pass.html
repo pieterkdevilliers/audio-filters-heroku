@@ -25,7 +25,7 @@
     <div class="input-direct">
         <div class="resistance">
             <label for="resistance-value">Resistance Value</label>
-            <input type="number" name="Resistance Value" id="resistance-value" aria-label="Enter the known resistance value here">
+            <input type="number" min="0" pattern="[0-9]" name="Resistance Value" id="resistance-value" aria-label="Enter the known resistance value here">
         </div>
         <div class="resistance">
             <label for="resistance-scale">Resistance Scale</label>
@@ -39,7 +39,7 @@
     <div class="input-direct">
         <div class="capacitance">
             <label for="capacitance-value">Capacitance Value</label>
-            <input type="number" name="Capacitance Value" id="capacitance-value"  aria-label="Enter the known capacitance value here">
+            <input type="number" min="0" pattern="[0-9]" name="Capacitance Value" id="capacitance-value"  aria-label="Enter the known capacitance value here">
         </div>
         <div class="capacitance">
             <label for="capacitance-scale">Capacitance Scale</label>
@@ -55,7 +55,7 @@
     <div class="input-direct">
         <div class="frequency">
             <label for="cut-off-frequency">Cutt-off Frequency</label>
-            <input type="number" name="Cut-off Frequency" id="cut-off-frequency" aria-label="Enter the known cut-off frequency value here">
+            <input type="number" min="0" pattern="[0-9]" name="Cut-off Frequency" id="cut-off-frequency" aria-label="Enter the known cut-off frequency value here">
         </div>
         <div class="frequency">
             <label for="frequency-scale">Frequency Scale</label>
