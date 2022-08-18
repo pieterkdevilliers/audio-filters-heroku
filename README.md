@@ -60,49 +60,30 @@ The website consists of only 3 pages. An initial landing page, with the options 
 The logo and a collapsing menu bar are centred in the header incorporating black and white colours to represent a sleek and modern feel in keeping with the brand. This colour coordination is seen throughout the body of the website with dark typography to represent a minimalist yet bold styles.  The designer has chosen green colour for specific features such as hover over the menu items, call to action buttons, and social media icons to represent the sustainability in her designs. The combination of natural and green colours convey a sense of creativity and confidence which reflects the designer’s personality. I also tried to use bold typography to further promote confidence and creativity as a reflection of the industry. 
 
 # Features 
+
+# Existing Features 
 ### Passive Low Pass Filter Calculator
 This allows the user to enter 2 of the 3 values required, including their unti scales. This then calculates the result and displays it on the screen. As an example, if the user enters a Resistance value of 300 with a unit scale of mega-ohm, and a Cut-off Frequency of 50 with a unit scale of Hertz, the rult is provided as 10,61pF (pico-Farad) as the required Capacitance.
 
 ### Passive High Pass Filter Calculator
 As with the Low Pass Filter, this allows the user to enter 2 of the 3 values required, including their unti scales. This then calculates the result and displays it on the screen. As an example, if the user enters a Resistance value of 8 with a unit scale of ohm, and a Cut-off Frequency of 8 with a unit scale of kHz, the rult is provided as 2.49μF (micro-Farad) as the required Capacitance.
 
-# Existing Features 
-* Header Logo – Exists on every page aiming to promote brand awareness. Clicking on the logo will return the users to the Home page as they expect. 
-* Header Navigation Bar – Exists on every page to allow users to navigate the website and move from one page to another for access to more information. 
-* [Home Page](https://tnamdarian.github.io/saranamdarian/) – Is a short introduction of the designer using visuals, a short biography of the designer and her ethos. 
-* Designer Photo – Exists on the Home page accompanied by a short biography of the designer. 
-* [Work Page](https://tnamdarian.github.io/saranamdarian/work.html) – It showcases the designers works and allows the visitors to view the thumbnail images of the designer’s works. Each image is clickable and can be viewed in a new page. 
-* Fancybox Viewer – Allows potential clients to view the designer’s works in more details. It opens in the photos in a bigger scale and users can move to the next of previous images and/or close them to return to the website. 
-* Footer –  Exists on every page and contains copyright to protect the content of the website; the social media and icons which link the users to the designer’s social media platforms; and the business address, phone number and email. For a better user-experience I put the link to the menu at the bottom of the page so the users do not need to scroll all the way up to access the menu. 
-* Designer’s Ethos – Exist on the Home page to familiarise the visitors with the designer’s style and vision. 
-* Testimonials – Exist in the Home page in a form of Carousel slides to confirm the designer’s credibility and build trust amongst users. 
-* Call to Action Buttons – Exist on every page and invites potential clients to make the first contact with the designer. 
-* Consultation Stages – Exist on the Contact page aiming to familiarise the users with the designer’s method of working and the stages involved in a project work. 
-* [Contact Page](https://tnamdarian.github.io/saranamdarian/contact.html) – Provides consultation stages and a consultation form. It allows the clients to send their request for a free consultation session. 
-
 # Features to Implement in future
-Due to time restraints, I was unable to include the following features but hope to implement them in a future release:
-* Embed up-to-date social media feeds - To showcase promotional activity and create buzz for the client base.
-* Promotional video on the homepage – To make the homepage more appealing and engaging and create a more positive emotional response to the user. There was no promotional video available as this stage. 
-* Designer’s blog to share educational articles and guides for added value. The designer has not had time to create a blog yet.  
-* Live Chat app - To provide an instant connection between the user and company with high visibility on the site. I do not have the skills yet. 
-* Add CAPTCHA to contact form – Allows business to protect the contact form from spam.  – JavaScript Needed.
-* FAQ page, table with FAQs and dropdown buttons to view answers - Helps potential clients find answers to their common questions. (The designer has to compile and provide a list in the future.)
-* Option to choose the language of the website - As the artist's second language is Farsi, this would allow Farsi speaking visitors to the website who form a big population in Vancouver, to view it in their native language. The content was not ready at this stage.
-* Add a download button for a white paper for digital marketing purposes and building an email list in the future. The content was not ready at this stage. 
+The following features can be added in the future, to help generate additional traffic and increase the opportunities for AdSense revenue
+* Make the filter calculators available on the domains: lowpassfiltercalculator.com and highpassfiltercalculator.com
+* Add AdSense configuration to the existing sites
+* Build additional electrical / circuit based calculators
 
 # Technologies Used
-This project uses HTML and CSS programming languages.
--	[Balsamiq](https://balsamiq.cloud/sxrt5co/pf4f2oo) I used Balsamiq, the rapid low-fidelity UI wireframing tool to sketch the structure of the website layout and its pages following best UX practices.
--	[Gitpod](https://gitpod.io/workspaces)- The developer used Gitpod to write the code to builds the website.
--	[GitHub](https://github.com/) - The project used GitHub to host my code that was created and pushed from GitPod.
+This project uses HTML, CSS and JavaScript programming languages.
+-	[Balsamiq](https://balsamiq.cloud) I used Balsamiq to generate the Desktop and Responsive Mock-ups.
+-	[Gitpod](https://gitpod.io/workspaces)- I used Gitpod to write the code to build the site.
+-	[GitHub](https://github.com/) - I used GitHub to host my code that was created and pushed from GitPod.
 -	[Bootstarp5](https://getbootstrap.com/) - The project uses Bootstrap5 (BootstrapCDN and components) to simplify the structure of the website and make the website responsive across various platforms.
--   [FontAwesome](https://fontawesome.com/) - The projects uses a few icons from FontAwesome to make the websites less wordy and more visually appealing. 
--	[Fancybox](https://fancyapps.com/fancybox/3/) The project uses Fancybox for a gallery modal popup to slideshow gallery images.
--   [jQuery](https://jquery.com/) The project used jQuery to supply to JavaScript linked needed to the Fancybox gallery. 
+-   [xDiagram](https://apps.apple.com/gb/app/xdiagram/id517581636?mt=12) - I used xDiagram to generate the equation, filter, circuit and cut-off frequency images for the site. 
 -	[Google Fonts](https://fonts.google.com/) The project uses Google fonts to style the website fonts.
--   [Tiny-PNG](https://tinypng.com/) I used tinypng for big images up to 5M needed to be compressed to improve the website's loading time. 
--   [CompressJPEG](https://compressjpeg.com/) The big images bigger than 5M needed to be compressed to improve the website's loading time.
+-   [Tiny-PNG](https://tinypng.com/) I used tinypng to compress images in order to improve the website's loading time. 
+-   [cloudconvert](https://cloudconvert.com/) I used cloudconvert to convert png files into WEBP files.
 -	[Webaim.org](https://webaim.org/) The Webaim was used to test colour contrast on the project.
 -	[W3C Markup Validation Service](https://validator.w3.org/#validate_by_input) The W3C Markup Validation Service checked the markup validity of Web documents in HTML.
 -	[W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/#validate_by_input) W3C CSS Validation Service was used to check the validity of my CSS in the project.
