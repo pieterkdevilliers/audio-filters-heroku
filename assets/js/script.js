@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("resistance-value").value = "0";
     document.getElementById("capacitance-value").value = "0";
     document.getElementById("cut-off-frequency").value = "0";
-})
+});
 
 /**
  * Called by the Calculate button
@@ -20,9 +20,15 @@ function receiveValues() {
     let frequencyValue = document.getElementById("cut-off-frequency").value;
     let frequencyScale = document.getElementById("frequency-scale").value;
 
-    let scaledResistance = parseFloat(calculateScaledResistance(resistanceValue, resistanceScale));
-    let scaledCapacitance = parseFloat(calculateScaledCapacitance(capacitanceValue, capacitanceScale));
-    let scaledFrequency = parseFloat(calculateScaledFrequency(frequencyValue, frequencyScale));
+    let scaledResistance = parseFloat(
+        calculateScaledResistance(resistanceValue, resistanceScale)
+        );
+    let scaledCapacitance = parseFloat(
+        calculateScaledCapacitance(capacitanceValue, capacitanceScale)
+        );
+    let scaledFrequency = parseFloat(
+        calculateScaledFrequency(frequencyValue, frequencyScale)
+        );
 
         if (resistanceValue === "0" && capacitanceValue !== "0" && frequencyValue !== "0") {
         calculateFinalResistance(scaledCapacitance, scaledFrequency);
@@ -31,7 +37,7 @@ function receiveValues() {
     } else if (resistanceValue !== "0" && capacitanceValue !== "0" && frequencyValue === "0") {
         calculateFinalFrequency(scaledCapacitance, scaledResistance);
     } else {
-        alert("Please complete two values in order to calculate the third")
+        alert("Please complete two values in order to calculate the third");
     }
 
 }
