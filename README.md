@@ -145,6 +145,8 @@ This project uses HTML, CSS and JavaScript programming languages.
 -	[W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/#validate_by_input) W3C CSS Validation Service was used to check the validity of my CSS in the project.
 -	[WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/)I used WAVE to make my site more accessible to individuals with disabilities by detecting any potential issues.
 
+-	[PlaceIMG](https://placeimg.com/)I used PlaceIMG to serve some temp images in the development process.
+
 # Testing 
 ## Testing against client stories from UX section of README.md
 - If the user lands on the home page, there is clear and direct links to the respective High Pass or Low Pass calculators, with a brief description of what to expect.
