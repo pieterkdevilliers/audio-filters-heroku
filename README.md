@@ -129,27 +129,19 @@ The initial `color: #43bea9;` had Contrast Ratio of 2.28:1 with the white text. 
 ![Colour Contrast Pass](https://raw.githubusercontent.com/pieterkdevilliers/audio-filters/main/docs/images/readme-images/colour-contrast-pass.webp) 
 
 ## COMPATIBILITY
-To ensure a broad range of users can successfully view/use the site, I tested it across all major browsers in both desktop and mobile configuration.
+I tested this in desktop and mobile configurations on the following browsers:
 
 * Chrome
-* Edge
 * Firefox
 * Safari
-* Internet Explorer
-
-## Issues
-The link on **Internet Explorer** does not recognise `font-antonio`. It displays the web using `San-sarif`. 
-
-# Further testing
-I asked my friends and family to click on the deployed link on their devices especially iPads and 17" and bigger laptops which I do not personally own. I added further bootstrap padding and margin and CSS media queries to make the website responsive on all devices. 
 
 # Deployment 
 This project was developed using [Gitpod](https://gitpod.io/workspaces), committed to git and pushed to GitHub using git commands. 
 
-To deploy this page to **GitHub Pages** from its [GitHub repository](https://github.com/TNamdarian/saranamdarian), the following steps were taken:
+To deploy this page to **GitHub Pages** from its [GitHub repository](https://github.com/pieterkdevilliers/audio-filters), the following steps were taken:
 
 1. Log into [GitHub](https://github.com/).
-2. From the list of repositories on the screen, **select saranamdarian**.
+2. From the list of repositories on the screen, **select audio-filters**.
 3. From the menu items near the top of the page, select **Settings**.
 4. Scroll down to the **GitHub Pages** section.
 5. Under Source click the drop-down menu labelled None and select **Master Branch**. Then **Save** it. 
@@ -179,17 +171,13 @@ To deploy this page to **GitHub Pages** from its [GitHub repository](https://git
 The texts for all the pages have been created by the designer. 
 
 ## Media 
-* The images were taken by and obtained from the designer – Sara Namdarian. 
-* Testimonial logos are from [Google Images](https://www.google.com/imghp?hl=en).
+* The images were created by myself - Pieter K de Villiers.
 
 ## Code 
-* CSS code for shadows and hover responsiveness of gallery images and ptoject timeline boxes was originally taken from [Portrait Artist](https://ajgreaves.github.io/portrait-artist/index.html) by A Greaves. 
+* This ReadMe document is based on a template from the project: [saranamdarian](https://github.com/TNamdarian/saranamdarian)
 
 # Acknowledgement 
-I decided to develop this website for my sister as she wanted to have a brand new website which has a more modern feel to it and it also reflected her own style and character. I took aspiration for this site from the following websites in terms of design: 
-* [Karimrashid.com](http://karimrashid.com/)
-* [Avissa Design](https://avissadesign.com/press)
-* [sokruta.com.ua/en](https://sokruta.com.ua/en)
-* I also received inspirations for the content of the website for personal branding via [Interior Design Business: How To Build a Personal Brand](https://essenziale-hd.com/2017/10/02/interior-design-business-build-personal-brand/).
+For the styling of this project I ttok inspiration from the colour scheme of the Meantime Anytime IPA beer cans: [Meantime Brweing](https://www.meantimebrewing.com/beers/core-beers/anytime-ipa)
 * Huge thanks to my mentor [Guido Cecilio Garcia Bernal](https://github.com/guidocecilio) guided me throughout this project.
-* I would like to also thank [Tim Nelson](https://github.com/TravelTimN), a great tutor at Code Institute, who helped me with problem solving. 
+* I would like to also thank [Jean de Villiers](https://github.com/PhantomPWR), for allowing me to think out loud and talk at him, when working through any specific coding challenge.
+* A big thank you to the collective brain at [Code Institue](https://codeinstitute.net/), for direction, suggestions and guidance on questions throughout this project
