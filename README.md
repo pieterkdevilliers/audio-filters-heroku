@@ -4,7 +4,7 @@
 
 [View the live project here.](https://pieterkdevilliers.github.io/audio-filters/) 
 
-![alt text](https://github.com/pieterkdevilliers/audio-filters/tree/main/assets/images/readme-images/am-i-responsive.png)  
+![alt text](https://github.com/pieterkdevilliers/audio-filters/blob/main/docs/images/readme-images/project-preview.png)  
 The image is from [Am I responsive?](http://ami.responsivedesign.is/)
 
 This is a simple website allowing the user to calculate the compnent values for either a Passive Low Pass Filter or a Passive High Pass Filter.
