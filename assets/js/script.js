@@ -1,17 +1,14 @@
 // Wait for the DOM to finish loading before setting input values to 0
-
 document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("resistance-value").value = "0";
     document.getElementById("capacitance-value").value = "0";
     document.getElementById("cut-off-frequency").value = "0";
 });
-
 /**
  * Called by the Calculate button
  * Retreives the 6 input values required to perform the calculation
  * If/Else statement determines value to be calculated
  */
-
 function receiveValues() {
     let resistanceValue = document.getElementById("resistance-value").value;
     let resistanceScale = document.getElementById("resistance-scale").value;
@@ -39,13 +36,10 @@ function receiveValues() {
     } else {
         alert("Please complete two values in order to calculate the third");
     }
-
 }
-
 /**
  * Takes the values provided to receiveValues and calculates the scaled resistanceValue
  */
-
 function calculateScaledResistance(resistanceValue, resistanceScale) {
     if (resistanceScale === "kohm") {
         let scaledResistance  = resistanceValue * 1000;
@@ -58,11 +52,9 @@ function calculateScaledResistance(resistanceValue, resistanceScale) {
         return scaledResistance;
     }
 }
-
 /**
  * Takes the values provided to receiveValues and calculates the scaled apacitanceValue
  */
-
 function calculateScaledCapacitance(capacitanceValue, capacitanceScale) {
     if (capacitanceScale === "mF") {
         let scaledCapacitance = capacitanceValue / 1000;
@@ -81,11 +73,9 @@ function calculateScaledCapacitance(capacitanceValue, capacitanceScale) {
         return scaledCapacitance;
     }
 }
-
 /**
  * Takes the values provided to receiveValues and calculates the scaled frequencyValue
  */
-
 function calculateScaledFrequency(frequencyValue, frequencyScale) {
     if (frequencyScale === "kHz") {
         let scaledFrequency = frequencyValue * 1000;
@@ -98,18 +88,15 @@ function calculateScaledFrequency(frequencyValue, frequencyScale) {
         return scaledFrequency;
     }
 }
-
 /**
  * Takes the scaled values and calculates the final resistance value
  */
 
 function calculateFinalResistance (scaledCapacitance, scaledFrequency) {
     let finalResistance = (1 / ((2 * Math.PI) * scaledFrequency * scaledCapacitance)).toFixed(2);
-    
 /*
 Checks result type to determine the scale value of the result ex: Ohm, kOhm or mOhm.
 */ 
-
     if (finalResistance > 999 && finalResistance < 999999) {
         convertedResistance = (finalResistance / 1000).toFixed(2);
         resultScale = "kΩ";
@@ -124,14 +111,11 @@ Checks result type to determine the scale value of the result ex: Ohm, kOhm or m
     document.getElementById("answer").innerText = `Result: ${convertedResistance}${resultScale} `;
     resetValues();
 }
-
 /**
  * Takes the scaled values and calculates the final capacitance value
  */
-
  function calculateFinalCapacitance (scaledFrequency, scaledResistance) {
     finalCapacitance = 1 / ((2 * Math.PI) * scaledResistance * scaledFrequency);
-
 /*
 Checks result type to determine the scale value of the result ex: pico, nano, micro etc...
 */    
@@ -149,7 +133,6 @@ Checks result type to determine the scale value of the result ex: pico, nano, mi
     milliValues = ["0.001", "0.002", "0.003", "0.004", "0.005", "0.006", "0.007", "0.008", "0.009", "0.01", "0.02", "0.03", "0.04", "0.05", "0.06", "0.07", "0.08", "0.09", "0.1", "0.2", "0.3", "0.4", "0.5", "0.6", "0.7", "0.8", "0.9"];
     milliValues.forEach(compareMilliArray);
 }
-
 /** Compares the result string to the items in the array - picoValues. If resultTypePico is true, the the function capacitanceScaleCalculation is called */
 function comparePicoArray(item) {
     resultTypePico = resultString.includes(item);
@@ -158,7 +141,6 @@ function comparePicoArray(item) {
         capacitanceScaleCalculation(resultString);
     } 
 }
-
 /** Compares the result string to the items in the array - nanoValues. If resultTypeNano is true, the the function capacitanceScaleCalculation is called */
 function compareNanoArray(item) {
     resultTypeNano = resultString.includes(item);
@@ -167,7 +149,6 @@ function compareNanoArray(item) {
         capacitanceScaleCalculation(resultString);
     } 
 }
-
 /** Compares the result string to the items in the array - microValues. If resultTypeMicro is true, the the function capacitanceScaleCalculation is called */
 function compareMicroArray(item) {
     resultTypeMicro = resultString.includes(item);
@@ -176,7 +157,6 @@ function compareMicroArray(item) {
         capacitanceScaleCalculation(resultString);
     } 
 }
-
 /** Compares the result string to the items in the array - milliValues. If resultTypeMilli is true, the the function capacitanceScaleCalculation is called */
 function compareMilliArray(item) {
     resultTypeMilli = resultString.includes(item);
@@ -185,9 +165,7 @@ function compareMilliArray(item) {
         capacitanceScaleCalculation(resultString);
     } 
 }
-
 /** If Else statements for correctly identifying the final capacitance value and unit */
-
 function capacitanceScaleCalculation () {
     if (resultTypePico) {
         convertedCapacitance = (finalCapacitance * 1000000000000).toFixed(2);
@@ -208,18 +186,14 @@ function capacitanceScaleCalculation () {
     document.getElementById("answer").innerText = `Result: ${convertedCapacitance}${resultScale} `;
     resetValues();
 }
-
 /**
  * Takes the scaled values and calculates the final frequency value
  */
-
  function calculateFinalFrequency (scaledCapacitance, scaledResistance) {
     let finalFrequency = (1 / ((2 * Math.PI) * scaledResistance * scaledCapacitance)).toFixed(2);
-
 /*
 Checks result type to determine the scale value of the result ex: Ohm, kOhm or mOhm.
 */ 
-
 if (finalFrequency > 999 && finalFrequency < 999999) {
     convertedFrequency = (finalFrequency / 1000).toFixed(2);
     resultScale = "kHz";
@@ -234,11 +208,9 @@ if (finalFrequency > 999 && finalFrequency < 999999) {
     document.getElementById("answer").innerText = `Result: ${convertedFrequency}${resultScale} `;
     resetValues();
 }
-
 /**
  * Resets all values to 0 after returning the result
  */
-
 function resetValues () {
     document.getElementById("resistance-value").value = "0";
     document.getElementById("capacitance-value").value = "0";
