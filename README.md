@@ -7,25 +7,19 @@
 ![alt text](https://github.com/pieterkdevilliers/audio-filters/blob/main/docs/images/readme-images/project-preview.png)  
 The image is from [Am I responsive?](http://ami.responsivedesign.is/)
 
-This is a simple website allowing the user to calculate the compnent values for either a Passive Low Pass Filter or a Passive High Pass Filter.
+This is a simple website allowing the user to calculate the component values for either a Passive Low Pass Filter or a Passive High Pass Filter.
 
 The user enters 2 out of the 3 required values, and the calculator will calculate the value of the third component.
 
-The business goals of this website are:
-* Increase brand awareness.
-* Reach wider clients by showcasing the designers’ portfolio.
-* Generate leads (via the contact page).
-* Simple and straightforward UX design close to the definer’s’ concept i.e. simplicity. 
-* Create realistic expectations of the design process and establish smooth designer-client relationship. 
+The goals of this website are:
+* Generate traffic in order to generate AdSense revenue.
 
-The customer visit this website to:
-* Search for a reliable and skilful interior designer to enhance their living and/or working environments. 
-* Have enough compelling and convincing evidence that this designer is the right fit for their project. 
-* Find the contact information effortlessly by filling up a form to hire the designer. 
-* Understand how the design process works and what the time scale is. 
+The user visit this website to:
+* Calculate the component values for Passive Low Pass or Passive High Pass filters.
+* An example of this would be to limit the lowest frequencies being sent to a pair of hi-fi speakers.
 
 # UX
-Most designer websites increase the cognitive load on the user which might make the users feel intimidated or overwhelmed. My aim was to create a simple website where the information is accessible effortlessly. Deciding to renovate living or working spaces is a difficult task; it is time-consuming, complex and expensive. Therefore, people might delay it until they can find someone who they can rely on. I want the design and content of the website to make this decision making process easier for potential clients. 
+The design of the site is purposefully simple and single-use focussed. There are only two calculators at this stage, and the site makes it easy for the user to know which filter type they are calculating component values for.
 
 ### Ideal client 
 The ideal client for this business is: 
