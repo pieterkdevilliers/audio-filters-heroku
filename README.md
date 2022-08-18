@@ -189,6 +189,15 @@ The initial `color: #43bea9;` had Contrast Ratio of 2.28:1 with the white text. 
 
 ![Colour Contrast Pass](https://raw.githubusercontent.com/pieterkdevilliers/audio-filters/main/docs/images/readme-images/colour-contrast-pass.webp) 
 
+## Lighthouse Testing
+- Lighthouse testing in Chrome Browser shows full 100% scores.
+
+![Landing Page Lighthouse Score](https://raw.githubusercontent.com/pieterkdevilliers/audio-filters/main/docs/images/readme-images/landing-page-lighthouse.webp)
+
+![HPF Page Lighthouse Score](https://raw.githubusercontent.com/pieterkdevilliers/audio-filters/main/docs/images/readme-images/hpf-lighthouse.webp)
+
+![LPF Page Lighthouse Score](https://raw.githubusercontent.com/pieterkdevilliers/audio-filters/main/docs/images/readme-images/lpf-lighthouse.webp)
+
 ## COMPATIBILITY
 I tested this in desktop and mobile configurations on the following browsers:
 
