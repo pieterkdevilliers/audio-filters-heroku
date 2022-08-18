@@ -36,6 +36,7 @@ function receiveValues() {
         calculateFinalFrequency(scaledCapacitance, scaledResistance);
     } else {
         alert("Please complete two values in order to calculate the third");
+        deliverAlertMessage;
     }
 }
 
@@ -317,4 +318,13 @@ function deliverResistanceValue () {
  function deliverFrequencyValue () {
     document.getElementById("answer").innerText = `Result: ${convertedFrequency}${resultScale} `;
     resetValues();
+}
+
+/**
+ * Deliver The ALert Message On-Screen 
+ */
+
+ function deliverAlertMessage () {
+    document.getElementById("alert").innerText = "Please complete two values in order to calculate the third";
+    // resetValues();
 }
