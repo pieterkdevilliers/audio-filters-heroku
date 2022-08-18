@@ -34,7 +34,7 @@ The project help clients to:
 ### User stories: 
 1.	As a visitor, I am designing a Passive High Pass Filter to limit the minimum freqency signal being passed to the amplifier inputs of a hi-fi system. I know what the amplifier's input impedence is (300 mOhm), and know the desired cut-off frequency (50Hz). I can use the Passive High Pass Filter calculator to determine the Capacitance required (10.61pF) for the capacitor in the circuit, to achieve the desired cut-off frequency.
 2.	As a visitor, I am designing a Passive Low Pass Filter to limit the maximum freqency signal being passed to the sub-woofer inputs of a hi-fi system. I know what the sub-woofer's input impedence is (300 mOhm), and know the desired cut-off frequency (50Hz). I can use the Passive Low Pass Filter calculator to determine the Capacitance required (10.61pF) for the capacitor in the circuit, to achieve the desired cut-off frequency.
-3.	As a visitor, I am designing a Sub-woofer amplifier input circuit. I've completed the design and in testing want to calculate the actual cut-off frequency of the input-circuit. Baed on the Capacitance and Input Impedence in the design, I can use the Passive Low Pass Filter calculator to determine the actual cut-off frequency of the design.
+3.	As a visitor, I am designing a Sub-woofer amplifier input circuit. I've completed the design and in testing want to calculate the actual cut-off frequency of the input-circuit. Based on the Capacitance and Input Impedence in the design, I can use the Passive Low Pass Filter calculator to determine the actual cut-off frequency of the design.
 4.	As a visitor, I am designing a Sub-woofer amplifier input circuit, with a Variable Resistor. I've completed the design and in testing want to calculate the actual reange of cut-off frequencies of the input-circuit. Baed on the Capacitance and Input Impedence, together with the range of the Variable Resistor in the design, I can use the Passive Low Pass Filter calculator to determine the actual cut-off frequency of the design.
 
 ### Scope
@@ -122,9 +122,11 @@ Several warnings were generated in the JavaScript code by **JSLint validation**.
 ![JSLint with No Warnings](https://raw.githubusercontent.com/pieterkdevilliers/audio-filters/main/docs/images/readme-images/jslint-validation.webp)
 
 ## Color Contrast 
-The initial `color: ##81b214;` had Contrast Ratio of 2.52:1 with the white background. So I changed it to a darker green. The [Color Contrast Accessibility Validator](https://webaim.org/) was used to test for colour contrast on the project.
+The initial `color: #43bea9;` had Contrast Ratio of 2.28:1 with the white text. This was changed for the darker `color: #226357;` The [Color Contrast Accessibility Validator](https://webaim.org/) was used to test for colour contrast on the project.
 
-![alt text](https://github.com/TNamdarian/saranamdarian/blob/master/assets/images/readme-images/contrast-checker.png). 
+![Colour Contrast Fail](https://raw.githubusercontent.com/pieterkdevilliers/audio-filters/main/docs/images/readme-images/colour-contrast-fail.webp) 
+
+![Colour Contrast Pass](https://raw.githubusercontent.com/pieterkdevilliers/audio-filters/main/docs/images/readme-images/colour-contrast-pass.webp) 
 
 ## COMPATIBILITY
 To ensure a broad range of users can successfully view/use the site, I tested it across all major browsers in both desktop and mobile configuration.
