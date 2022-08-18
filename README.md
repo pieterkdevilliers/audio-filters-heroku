@@ -56,6 +56,65 @@ The website consists of only 3 pages. An initial landing page, with the options 
 * [FIlter Sketches](https://raw.githubusercontent.com/pieterkdevilliers/audio-filters/main/docs/images/readme-images/filter-sketches.webp)
 * [FC Equation](https://raw.githubusercontent.com/pieterkdevilliers/audio-filters/main/docs/images/readme-images/fc-equation.webp)
 
+### Build and Design Process:
+# Stage 1:
+
+Initially, everything was left unstyled, with focus on getting the JavaScript calculation functionality working correctly. 
+
+![Landing Page Unstyled](https://raw.githubusercontent.com/pieterkdevilliers/audio-filters/main/docs/images/readme-images/landing-page-unstyled.webp)
+
+![LPF Page Unstyled](https://raw.githubusercontent.com/pieterkdevilliers/audio-filters/main/docs/images/readme-images/lpf-unstyled.webp)
+
+![HPF Page Unstyled](https://raw.githubusercontent.com/pieterkdevilliers/audio-filters/main/docs/images/readme-images/hpf-unstyled.webp)
+
+# Stage 2:
+
+Basic styling was used, simply to get the elements and placeholder images into the right locations on the screen. 
+
+![stage-2-1](https://raw.githubusercontent.com/pieterkdevilliers/audio-filters/main/docs/images/readme-images/stage-2-1.webp)
+
+![stage-2-2](https://raw.githubusercontent.com/pieterkdevilliers/audio-filters/main/docs/images/readme-images/stage-2-2.webp)
+
+![stage-2-3](https://raw.githubusercontent.com/pieterkdevilliers/audio-filters/main/docs/images/readme-images/stage-2-3.webp)
+
+![stage-2-4](https://raw.githubusercontent.com/pieterkdevilliers/audio-filters/main/docs/images/readme-images/stage-2-4.webp)
+
+![stage-2-5](https://raw.githubusercontent.com/pieterkdevilliers/audio-filters/main/docs/images/readme-images/stage-2-5.webp)
+
+![stage-2-6](https://raw.githubusercontent.com/pieterkdevilliers/audio-filters/main/docs/images/readme-images/stage-2-6.webp)
+
+![stage-2-7](https://raw.githubusercontent.com/pieterkdevilliers/audio-filters/main/docs/images/readme-images/stage-2-7.webp)
+
+![stage-2-8](https://raw.githubusercontent.com/pieterkdevilliers/audio-filters/main/docs/images/readme-images/stage-2-8.webp)
+
+# Stage 3:
+
+Hand-drawn diagrams and images were added, together with the calculated result shown on-screen. 
+
+![Placeholder Diagrams](https://raw.githubusercontent.com/pieterkdevilliers/audio-filters/main/docs/images/readme-images/placeholder-diagrams.webp)
+
+![Console Results Checking](https://raw.githubusercontent.com/pieterkdevilliers/audio-filters/main/docs/images/readme-images/console-result-checking.webp)
+
+# Stage 4:
+
+Colour scheme and final layout completed, now using CSS Flex to make responsiveness easier. 
+
+![Home Screen with Temp Diagrams](https://raw.githubusercontent.com/pieterkdevilliers/audio-filters/main/docs/images/readme-images/home-screen.webp)
+
+![High Pass Filter Screen with Temp Diagrams](https://raw.githubusercontent.com/pieterkdevilliers/audio-filters/main/docs/images/readme-images/hpf-temp-diagrms.webp)
+
+![Low Pass Filter Screen with Temp Diagrams](https://raw.githubusercontent.com/pieterkdevilliers/audio-filters/main/docs/images/readme-images/full-temp-diagrams.webp)
+
+# Stage 5:
+
+Final version, with all placeholder images replaced and styling completed. 
+
+![Final Home Page](https://raw.githubusercontent.com/pieterkdevilliers/audio-filters/main/docs/images/readme-images/home-page.webp)
+
+![Final High Pass Filter Page](https://raw.githubusercontent.com/pieterkdevilliers/audio-filters/main/docs/images/readme-images/hpf-page.webp)
+
+![Final Low Pass Filter Page](https://raw.githubusercontent.com/pieterkdevilliers/audio-filters/main/docs/images/readme-images/lpf-page.webp)
+
 # Features 
 
 # Existing Features 
