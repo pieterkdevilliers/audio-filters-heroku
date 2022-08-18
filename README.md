@@ -99,21 +99,27 @@ This project uses HTML, CSS and JavaScript programming languages.
 
     
 ## Code validation 
-I used [W3C CSS validation](https://jigsaw.w3.org/css-validator/#validate_by_input) and [W3C Markup Validation](https://validator.w3.org/#validate_by_input) to check the validity of the website code.
+I used [W3C CSS validation](https://jigsaw.w3.org/css-validator/#validate_by_uri) and [W3C Markup Validation](https://validator.w3.org/#validate_by_uri) and [JSLint](https://www.jslint.com/) to check the validity of the website code.
 
 Several issues were identified on **W3C Markup Validation**. 
 
-![alt text](https://github.com/TNamdarian/saranamdarian/blob/master/assets/images/readme-images/html-erros-contact-page.png)
+![alt text](https://raw.githubusercontent.com/pieterkdevilliers/audio-filters/main/docs/images/readme-images/html-validation-errors.webp)
 
 ![alt text](https://github.com/TNamdarian/saranamdarian/blob/master/assets/images/readme-images/aria-lebel-footer.png)
 
 ![alt text](https://github.com/TNamdarian/saranamdarian/blob/master/assets/images/readme-images/images-error.png)
 
-After I rectified the issue, no further errors were picked. 
+After I rectified the issue, no further errors were picked up. 
+
+![alt text](https://raw.githubusercontent.com/pieterkdevilliers/audio-filters/main/docs/images/readme-images/html-validation-errors.webp)
 
 No errors were identified in the CSS code by **W3C CSS validation**. 
 
-![alt text](https://github.com/TNamdarian/saranamdarian/blob/master/assets/images/readme-images/clean.css.png)
+![alt text](![alt text](https://raw.githubusercontent.com/pieterkdevilliers/audio-filters/main/docs/images/readme-images/css-validation-no-errors.webp)
+
+Several warnings were generated in the JavaScript code by **JSLint validation**. 
+
+![alt text](![alt text](https://raw.githubusercontent.com/pieterkdevilliers/audio-filters/main/docs/images/readme-images/jslint-validation.webp)
 
 ## Color Contrast 
 The initial `color: ##81b214;` had Contrast Ratio of 2.52:1 with the white background. So I changed it to a darker green. The [Color Contrast Accessibility Validator](https://webaim.org/) was used to test for colour contrast on the project.
