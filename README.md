@@ -101,7 +101,7 @@ Colour scheme and final layout completed, now using CSS Flex to make responsiven
 
 ![Home Screen with Temp Diagrams](https://raw.githubusercontent.com/pieterkdevilliers/audio-filters/main/docs/images/readme-images/home-screen.webp)
 
-![High Pass Filter Screen with Temp Diagrams](https://raw.githubusercontent.com/pieterkdevilliers/audio-filters/main/docs/images/readme-images/hpf-temp-diagrms.webp)
+![High Pass Filter Screen with Temp Diagrams](https://raw.githubusercontent.com/pieterkdevilliers/audio-filters/main/docs/images/readme-images/hpf-temp-diagrams.webp)
 
 ![Low Pass Filter Screen with Temp Diagrams](https://raw.githubusercontent.com/pieterkdevilliers/audio-filters/main/docs/images/readme-images/full-temp-diagrams.webp)
 
