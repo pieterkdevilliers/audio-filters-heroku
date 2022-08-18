@@ -4,7 +4,7 @@
 
 [View the live project here.](https://pieterkdevilliers.github.io/audio-filters/) 
 
-![alt text](https://github.com/pieterkdevilliers/audio-filters/blob/main/docs/images/readme-images/project-preview.png)  
+![Resppnsive Preview of site](https://github.com/pieterkdevilliers/audio-filters/blob/main/docs/images/readme-images/project-preview.png)  
 The image is from [Am I responsive?](http://ami.responsivedesign.is/)
 
 This is a simple website allowing the user to calculate the component values for either a Passive Low Pass Filter or a Passive High Pass Filter.
@@ -32,10 +32,10 @@ The project help clients to:
 * Determine the component values or cut-off frequency for a set of known components.
 
 ### User stories: 
-1.	As a visitor, I am designing a Passive High Pass Filter to limit the minimum freqency signal being passed to the amplifier inputs of a hi-fi system. I know what the amplifier's input impedence is (300 mOhm), and know the desired cut-off frequency (50Hz). I can use the Passive High Pass Filter calculator to determine the Capacitance required (10.61pF) for the capacitor in the circuit, to achieve the desired cut-off frequency.
-2.	As a visitor, I am designing a Passive Low Pass Filter to limit the maximum freqency signal being passed to the sub-woofer inputs of a hi-fi system. I know what the sub-woofer's input impedence is (300 mOhm), and know the desired cut-off frequency (50Hz). I can use the Passive Low Pass Filter calculator to determine the Capacitance required (10.61pF) for the capacitor in the circuit, to achieve the desired cut-off frequency.
-3.	As a visitor, I am designing a Sub-woofer amplifier input circuit. I've completed the design and in testing want to calculate the actual cut-off frequency of the input-circuit. Based on the Capacitance and Input Impedence in the design, I can use the Passive Low Pass Filter calculator to determine the actual cut-off frequency of the design.
-4.	As a visitor, I am designing a Sub-woofer amplifier input circuit, with a Variable Resistor. I've completed the design and in testing want to calculate the actual reange of cut-off frequencies of the input-circuit. Baed on the Capacitance and Input Impedence, together with the range of the Variable Resistor in the design, I can use the Passive Low Pass Filter calculator to determine the actual cut-off frequency of the design.
+1.	As a visitor, I am designing a Passive High Pass Filter to limit the minimum freqency signal being passed to the amplifier inputs of a hi-fi system. I know what the amplifier's input impedance is (300 mOhm), and know the desired cut-off frequency (50Hz). I can use the Passive High Pass Filter calculator to determine the Capacitance required (10.61pF) for the capacitor in the circuit, to achieve the desired cut-off frequency.
+2.	As a visitor, I am designing a Passive Low Pass Filter to limit the maximum freqency signal being passed to the sub-woofer inputs of a hi-fi system. I know what the sub-woofer's input impedance is (300 mOhm), and know the desired cut-off frequency (50Hz). I can use the Passive Low Pass Filter calculator to determine the Capacitance required (10.61pF) for the capacitor in the circuit, to achieve the desired cut-off frequency.
+3.	As a visitor, I am designing a Sub-woofer amplifier input circuit. I've completed the design and in testing want to calculate the actual cut-off frequency of the input-circuit. Based on the Capacitance and Input Impedance in the design, I can use the Passive Low Pass Filter calculator to determine the actual cut-off frequency of the design.
+4.	As a visitor, I am designing a Sub-woofer amplifier input circuit, with a Variable Resistor. I've completed the design and in testing want to calculate the actual reange of cut-off frequencies of the input-circuit. Baed on the Capacitance and Input Impedance, together with the range of the Variable Resistor in the design, I can use the Passive Low Pass Filter calculator to determine the actual cut-off frequency of the design.
 
 ### Scope
 To help the visitor achieve their circuit design goals, I included the following features in the website: 
@@ -135,7 +135,6 @@ This project uses HTML, CSS and JavaScript programming languages.
 -	[Balsamiq](https://balsamiq.cloud) I used Balsamiq to generate the Desktop and Responsive Mock-ups.
 -	[Gitpod](https://gitpod.io/workspaces)- I used Gitpod to write the code to build the site.
 -	[GitHub](https://github.com/) - I used GitHub to host my code that was created and pushed from GitPod.
--	[Bootstarp5](https://getbootstrap.com/) - The project uses Bootstrap5 (BootstrapCDN and components) to simplify the structure of the website and make the website responsive across various platforms.
 -   [xDiagram](https://apps.apple.com/gb/app/xdiagram/id517581636?mt=12) - I used xDiagram to generate the equation, filter, circuit and cut-off frequency images for the site. 
 -	[Google Fonts](https://fonts.google.com/) The project uses Google fonts to style the website fonts.
 -   [Tiny-PNG](https://tinypng.com/) I used tinypng to compress images in order to improve the website's loading time. 
@@ -178,7 +177,7 @@ Several warnings were generated in the JavaScript code by **JSLint validation**.
 
 ![JSLint with Warnings](https://raw.githubusercontent.com/pieterkdevilliers/audio-filters/main/docs/images/readme-images/jslint-validation.webp)
 
-Several warnings were generated in the JavaScript code by **JSLint validation**. 
+These warnings were dealt with in further code updates and refoactoring. 
 
 ![JSLint with No Warnings](https://raw.githubusercontent.com/pieterkdevilliers/audio-filters/main/docs/images/readme-images/jslint-validation.webp)
 
@@ -248,6 +247,6 @@ The texts for all the pages have been created by the designer.
 
 # Acknowledgement 
 For the styling of this project I ttok inspiration from the colour scheme of the Meantime Anytime IPA beer cans: [Meantime Brweing](https://www.meantimebrewing.com/beers/core-beers/anytime-ipa)
-* Huge thanks to my mentor [Guido Cecilio Garcia Bernal](https://github.com/guidocecilio) guided me throughout this project.
+* Huge thanks to my mentor [Guido Cecilio Garcia Bernal](https://github.com/guidocecilio) who guided me throughout this project.
 * I would like to also thank [Jean de Villiers](https://github.com/PhantomPWR), for allowing me to think out loud and talk at him, when working through any specific coding challenge.
 * A big thank you to the collective brain at [Code Institue](https://codeinstitute.net/), for direction, suggestions and guidance on questions throughout this project
