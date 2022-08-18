@@ -292,7 +292,7 @@ function resetValues () {
     document.getElementById("cut-off-frequency").value = "0";
 }
 
-/** 
+/**
  * Deliver Resistance Value On-Screen 
  */
 
@@ -301,7 +301,7 @@ function deliverResistanceValue () {
     resetValues();
 }
 
-/** 
+/**
  * Deliver Capacitance Value On-Screen 
  */
 
@@ -310,7 +310,7 @@ function deliverResistanceValue () {
     resetValues();
 }
 
-/** 
+/**
  * Deliver Frequency Value On-Screen 
  */
 
