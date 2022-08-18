@@ -36,7 +36,7 @@ function receiveValues() {
         calculateFinalFrequency(scaledCapacitance, scaledResistance);
     } else {
         alert("Please complete two values in order to calculate the third");
-        deliverAlertMessage;
+        deliverAlertMessage();
     }
 }
 
@@ -326,5 +326,6 @@ function deliverResistanceValue () {
 
  function deliverAlertMessage () {
     document.getElementById("alert").innerText = "Please complete two values in order to calculate the third";
+    console.log("error message generated");
     // resetValues();
 }
