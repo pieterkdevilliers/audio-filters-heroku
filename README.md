@@ -23,24 +23,19 @@ The design of the site is purposefully simple and single-use focussed. There are
 
 ### Ideal client 
 The ideal client for this business is: 
-* English speaking
-* Values design 
-* Located in Vancouver, Canada
-* Home or/and business owners 
-* Willing to spend money on a design or concept to modernize/enhance their domestic or commercial spaces. 
+* Electronic hobbyist
+* Hi-Fi enthusiast
+* Hi-Fi circuit designer
+* Audiophile hobbyist
 
 The project help clients to: 
-* navigate easily through the website and reach the information they need easily. 
-* get to know the designer, previous clients, and her works and to contact her directly. 
+* Determine the component values or cut-off frequency for a set of known components.
 
 ### User stories: 
-1.	As a new visitor, I want to easily navigate the site to find whether the designer the right fit for my needs. 
-2.	As a business/home owner, I would like to find whether the designer is trustworthy and reputable by seeing what the previous clients say about them. 
-3.	As a new visitor, I would like to learn more about the designer’s vision, so I can get to know their background better. I would also like to know the reasons how this designer stands out of the crowd. 
-4.	As a new visitor, I would like to know the designer’s process and approach to their clients and projects. I would like to work with approachable designers and have a clear picture of what I should expect.  
-5.	As an interested client, I want to be able to contact the designer easily. 
-6.	As a potential client, I would like to learn more about the designers’ works and get validation via their history and presence in the social media. It is more reassuring to trust businesses who have a solid follower base.  
-7.	As a returning visitor to the website, I want to be able to find the contact page easily to reach the designer.
+1.	As a visitor, I am designing a Passive High Pass Filter to limit the minimum freqency signal being passed to the amplifier inputs of a hi-fi system. I know what the amplifier's input impedence is (300 mOhm), and know the desired cut-off frequency (50Hz). I can use the Passive High Pass Filter calculator to determine the Capacitance required (10.61pF) for the capacitor in the circuit, to achieve the desired cut-off frequency.
+2.	As a visitor, I am designing a Passive Low Pass Filter to limit the maximum freqency signal being passed to the sub-woofer inputs of a hi-fi system. I know what the sub-woofer's input impedence is (300 mOhm), and know the desired cut-off frequency (50Hz). I can use the Passive Low Pass Filter calculator to determine the Capacitance required (10.61pF) for the capacitor in the circuit, to achieve the desired cut-off frequency.
+3.	As a visitor, I am designing a Sub-woofer amplifier input circuit. I've completed the design and in testing want to calculate the actual cut-off frequency of the input-circuit. Baed on the Capacitance and Input Impedence in the design, I can use the Passive Low Pass Filter calculator to determine the actual cut-off frequency of the design.
+4.	As a visitor, I am designing a Sub-woofer amplifier input circuit, with a Variable Resistor. I've completed the design and in testing want to calculate the actual reange of cut-off frequencies of the input-circuit. Baed on the Capacitance and Input Impedence, together with the range of the Variable Resistor in the design, I can use the Passive Low Pass Filter calculator to determine the actual cut-off frequency of the design.
 
 ### Scope
 To achieve the strategic goals, I included the following features in the website: 
