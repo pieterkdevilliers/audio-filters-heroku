@@ -38,19 +38,16 @@ The project help clients to:
 4.	As a visitor, I am designing a Sub-woofer amplifier input circuit, with a Variable Resistor. I've completed the design and in testing want to calculate the actual reange of cut-off frequencies of the input-circuit. Baed on the Capacitance and Input Impedence, together with the range of the Variable Resistor in the design, I can use the Passive Low Pass Filter calculator to determine the actual cut-off frequency of the design.
 
 ### Scope
-To achieve the strategic goals, I included the following features in the website: 
-* Header containing designer's logo and the menu bar including Home, Work, and Contact.
-* Home page which says about the designer for brand awareness. 
-* Company ethos detailing the designers’ style. 
-* Call for action button on every page. 
-* Portfolio highlighting the projects the designer has completed. 
-* Testimonials including the name of clients and their experience. 
-* Consultation process from the initial phone conversation to project completion. 
-* Consultation Form to allow users contact the designer to request a collaboration. 
-* Footer containing the designer's address, phone number and links to her social media and email.
+To help the visitor achieve their circuit design goals, I included the following features in the website: 
+* Passive Low Pass Filter calculator.
+* Passive High Pass FIlter calculator.
+* Calculation Formula and Legend, showing the formula used in the calculations.
+* Simple High Pass and Low Pass Filter diagrams.
+* Basic High Pass and Low Pass Circuit Layout DIagrams, showing the difference in required circuit layout for each filter type.
+* Diagrams showing the different -3dB cut-off frequency graphs for the Low Pass and High Pass filters respectively.
 
 ## Skeleton 
-The website consists of three pages; Home (introduces the designer and her approach to design),  Work (showcasing the designer’s completed and current projects), and Contact (including consultation stages and a consultation form). 
+The website consists of only 3 pages. An initial landing page, with the options between the two calculator pages. A page for Passive High Pass FIlter and a third for the Passive Low Pass FIlter.
 
 ### Wireframe Mockups: 
 * [Home](https://share.balsamiq.com/c/tQRnpMCDJFQxp9gezXZ22C.png)
