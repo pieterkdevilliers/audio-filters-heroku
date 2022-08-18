@@ -291,6 +291,7 @@ function resetValues () {
     document.getElementById("resistance-value").value = "0";
     document.getElementById("capacitance-value").value = "0";
     document.getElementById("cut-off-frequency").value = "0";
+    document.getElementById("alert").innerText = ("");
 }
 
 /**
