@@ -168,7 +168,7 @@ Several issues were identified on **W3C Markup Validation**.
 
 After I rectified the issue, no further errors were picked up. 
 
-![HTML Validation with No Errors](https://raw.githubusercontent.com/pieterkdevilliers/audio-filters/main/docs/images/readme-images/html-validation-errors.webp)
+![HTML Validation with No Errors](https://raw.githubusercontent.com/pieterkdevilliers/audio-filters/main/docs/images/readme-images/html-validation-no-errors.webp)
 
 No errors were identified in the CSS code by **W3C CSS validation**. 
 
