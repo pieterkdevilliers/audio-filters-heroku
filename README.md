@@ -87,52 +87,16 @@ This project uses HTML, CSS and JavaScript programming languages.
 -	[WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/)I used WAVE to make my site more accessible to individuals with disabilities by detecting any potential issues.
 
 # Testing 
-## Testing client stories from UX section of README.md
-1.	As a new visitor, I want to easily navigate the site to find whether the designer the right fit for my needs.
-    - The user can navigate through the website using the navbar **menu** on top of the page. 
-    - The **logo** links the user back to the **Home Page**. 
+## Testing against client stories from UX section of README.md
+- If the user lands on the home page, there is clear and direct links to the respective High Pass or Low Pass calculators, with a brief description of what to expect.
+![Home Page](https://raw.githubusercontent.com/pieterkdevilliers/audio-filters/main/docs/images/readme-images/home-page.webp)
 
-    ![alt text](https://github.com/TNamdarian/saranamdarian/blob/master/assets/images/readme-images/menubar.png)
+- The **High Pass Filter Page** allows the user to calculate any of the required 3 values for creating a Passive High Pass Filter. 
+![High Pass Filter Page](https://raw.githubusercontent.com/pieterkdevilliers/audio-filters/main/docs/images/readme-images/hpf-page.webp)
 
-    - The **4 reasons** on **Home Page** provide more information about the designer to the users. 
+- The **Low Pass Filter Page** allows the user to calculate any of the required 3 values for creating a Passive Low Pass Filter. 
+![Low Pass Filter Page](https://raw.githubusercontent.com/pieterkdevilliers/audio-filters/main/docs/images/readme-images/lpf-page.webp)
 
-    ![alt text](https://github.com/TNamdarian/saranamdarian/blob/master/assets/images/readme-images/ethos.png)
-
-    - The **call to action button** takes the users to the **Contact Page** where they can get more information on how to contact the designer. 
-
-    ![alt text](https://github.com/TNamdarian/saranamdarian/blob/master/assets/images/readme-images/cta.png)
-
-2.	As a business/home owner, I would like to find whether the designer is trustworthy and reputable by seeing what the previous clients say about them.
-    - On the **Work Page**, below the gallery the users can see the previous clients’ **testimonials**. 
-
-    ![alt text](https://github.com/TNamdarian/saranamdarian/blob/master/assets/images/readme-images/testimonials.png)
-
-3.	As a new visitor, I would like to learn more about the designer’s vision, so I can get to know their background better. I would also like to know the reasons how this designer stands out of the crowd. 
-    - The **4 reasons** on **Home Page** provide more information about the designer to the users. 
-    - The **gallery** on **Work Page** will show the designer’s range of skills. 
-
-    ![alt text](https://github.com/TNamdarian/saranamdarian/blob/master/assets/images/readme-images/gallery.png)
-
-4.	As a new visitor, I would like to know the designer’s process and approach to their clients and projects. I would like to work with approachable designers and have a clear picture of what I should expect.  
-    - In **Contact Page**, users can review the consultations process and have a realistic idea of a **Project Timeline**. 
-
-    ![alt text](https://github.com/TNamdarian/saranamdarian/blob/master/assets/images/readme-images/project-timeline.png)
-
-5. As an interested client, I want to be able to contact the designer easily. 
-    - In **Contact Page**, users can fill up the **Consultation Form**.
-
-    ![alt text](https://github.com/TNamdarian/saranamdarian/blob/master/assets/images/readme-images/consultation-form.png)
-
-    - Each page, has a **call to action button** which takes users to the **Contact Page** to view the relevant information.
-
-6. As a potential client, I would like to learn more about the designers’ works and get validation via their history and presence in the social media. It is more reassuring to trust businesses who have a solid follower base.  
-    - The galley on **Work Page** showcases the designer’s range of skills and projects. 
-    - The **footer** provides links to the designer's **social media** platforms. 
-
-    ![alt text](https://github.com/TNamdarian/saranamdarian/blob/master/assets/images/readme-images/footer.png)
-
-7. As a returning visitor to the website, I want to be able to find the contact page easily to reach the designer.
-    - The **phone number** and **address** of the designer has been shared in the footer on every page. 
     
 ## Code validation 
 I used [W3C CSS validation](https://jigsaw.w3.org/css-validator/#validate_by_input) and [W3C Markup Validation](https://validator.w3.org/#validate_by_input) to check the validity of the website code.
