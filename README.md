@@ -50,9 +50,11 @@ To help the visitor achieve their circuit design goals, I included the following
 The website consists of only 3 pages. An initial landing page, with the options between the two calculator pages. A page for Passive High Pass FIlter and a third for the Passive Low Pass FIlter.
 
 ### Wireframe Mockups: 
-* [Home](https://share.balsamiq.com/c/tQRnpMCDJFQxp9gezXZ22C.png)
-* [Work](https://share.balsamiq.com/c/p7h2GmsKvW81XdHYdKaVBW.png)
-* [Contact](https://share.balsamiq.com/c/tcT217VdfK6RTCJ52Sd5fY.png)
+* [Desktop Mock-up](https://raw.githubusercontent.com/pieterkdevilliers/audio-filters/main/docs/images/readme-images/desktop-mock-up.webp)
+* [Responsive Mock-up](https://raw.githubusercontent.com/pieterkdevilliers/audio-filters/main/docs/images/readme-images/responsive-mock-up.webp)
+* [Site Sketch](https://raw.githubusercontent.com/pieterkdevilliers/audio-filters/main/docs/images/readme-images/site-sketch.webp)
+* [FIlter Sketches](https://raw.githubusercontent.com/pieterkdevilliers/audio-filters/main/docs/images/readme-images/filter-sketches.webp)
+* [FC Equation](https://raw.githubusercontent.com/pieterkdevilliers/audio-filters/main/docs/images/readme-images/fc-equation.webp)
 
 ## Surface 
 The logo and a collapsing menu bar are centred in the header incorporating black and white colours to represent a sleek and modern feel in keeping with the brand. This colour coordination is seen throughout the body of the website with dark typography to represent a minimalist yet bold styles.  The designer has chosen green colour for specific features such as hover over the menu items, call to action buttons, and social media icons to represent the sustainability in her designs. The combination of natural and green colours convey a sense of creativity and confidence which reflects the designer’s personality. I also tried to use bold typography to further promote confidence and creativity as a reflection of the industry. 
