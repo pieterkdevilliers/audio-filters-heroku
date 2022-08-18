@@ -103,23 +103,23 @@ I used [W3C CSS validation](https://jigsaw.w3.org/css-validator/#validate_by_uri
 
 Several issues were identified on **W3C Markup Validation**. 
 
-![alt text](https://raw.githubusercontent.com/pieterkdevilliers/audio-filters/main/docs/images/readme-images/html-validation-errors.webp)
-
-![alt text](https://github.com/TNamdarian/saranamdarian/blob/master/assets/images/readme-images/aria-lebel-footer.png)
-
-![alt text](https://github.com/TNamdarian/saranamdarian/blob/master/assets/images/readme-images/images-error.png)
+![HTML Validation with Errors](https://raw.githubusercontent.com/pieterkdevilliers/audio-filters/main/docs/images/readme-images/html-validation-errors.webp)
 
 After I rectified the issue, no further errors were picked up. 
 
-![alt text](https://raw.githubusercontent.com/pieterkdevilliers/audio-filters/main/docs/images/readme-images/html-validation-errors.webp)
+![HTML Validation with No Errors](https://raw.githubusercontent.com/pieterkdevilliers/audio-filters/main/docs/images/readme-images/html-validation-errors.webp)
 
 No errors were identified in the CSS code by **W3C CSS validation**. 
 
-![alt text](![alt text](https://raw.githubusercontent.com/pieterkdevilliers/audio-filters/main/docs/images/readme-images/css-validation-no-errors.webp)
+![CSS Validation with No Errors](https://raw.githubusercontent.com/pieterkdevilliers/audio-filters/main/docs/images/readme-images/css-validation-no-errors.webp)
 
 Several warnings were generated in the JavaScript code by **JSLint validation**. 
 
-![alt text](![alt text](https://raw.githubusercontent.com/pieterkdevilliers/audio-filters/main/docs/images/readme-images/jslint-validation.webp)
+![JSLint with Warnings](https://raw.githubusercontent.com/pieterkdevilliers/audio-filters/main/docs/images/readme-images/jslint-validation.webp)
+
+Several warnings were generated in the JavaScript code by **JSLint validation**. 
+
+![JSLint with No Warnings](https://raw.githubusercontent.com/pieterkdevilliers/audio-filters/main/docs/images/readme-images/jslint-validation.webp)
 
 ## Color Contrast 
 The initial `color: ##81b214;` had Contrast Ratio of 2.52:1 with the white background. So I changed it to a darker green. The [Color Contrast Accessibility Validator](https://webaim.org/) was used to test for colour contrast on the project.
