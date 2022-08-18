@@ -49,7 +49,7 @@ To help the visitor achieve their circuit design goals, I included the following
 ## Skeleton 
 The website consists of only 3 pages. An initial landing page, with the options between the two calculator pages. A page for Passive High Pass FIlter and a third for the Passive Low Pass FIlter.
 
-### Wireframe Mockups: 
+### Wireframe Mock-ups: 
 * [Desktop Mock-up](https://raw.githubusercontent.com/pieterkdevilliers/audio-filters/main/docs/images/readme-images/desktop-mock-up.webp)
 * [Responsive Mock-up](https://raw.githubusercontent.com/pieterkdevilliers/audio-filters/main/docs/images/readme-images/responsive-mock-up.webp)
 * [Site Sketch](https://raw.githubusercontent.com/pieterkdevilliers/audio-filters/main/docs/images/readme-images/site-sketch.webp)
@@ -60,30 +60,11 @@ The website consists of only 3 pages. An initial landing page, with the options 
 The logo and a collapsing menu bar are centred in the header incorporating black and white colours to represent a sleek and modern feel in keeping with the brand. This colour coordination is seen throughout the body of the website with dark typography to represent a minimalist yet bold styles.  The designer has chosen green colour for specific features such as hover over the menu items, call to action buttons, and social media icons to represent the sustainability in her designs. The combination of natural and green colours convey a sense of creativity and confidence which reflects the designer’s personality. I also tried to use bold typography to further promote confidence and creativity as a reflection of the industry. 
 
 # Features 
-### Header
-The website consists of three pages; Home, Work and Contact. The **header** contains a **logo** and **menu** option on the top middle of every page.  This will create consistency throughout the page and the user can access the information via the menu bar and move around the site. The links will remain active when in use. 
+### Passive Low Pass Filter Calculator
+This allows the user to enter 2 of the 3 values required, including their unti scales. This then calculates the result and displays it on the screen. As an example, if the user enters a Resistance value of 300 with a unit scale of mega-ohm, and a Cut-off Frequency of 50 with a unit scale of Hertz, the rult is provided as 10,61pF (pico-Farad) as the required Capacitance.
 
-### Footer
-Every page has a **footer** with **designer's address**, **designer's phone number**, **social media and email icons** and **copyright information**. The social media icons are linked to the users’ social media accounts. 
-There is also a **Top** button which with one click it takes the user to the menu bar. 
-
-### Home
-The Home page features an **image of the designer** to personalise the website and raise brand awareness. To the left side of the image, there is some information about the designer to make the users feel connected to the brand. 
-At the bottom of these, the **designer’s’ visions and ethos** are presented. This helps the users to be able to make an informed decision whether they share the same values as the designer with regards to design concepts. It will enhance user’s emotional response. 
-Finally, there is an invitation to have a chat about the user’s project via a **call to action** button: *Book your free consultation session now!*. 
-The Home page also uses **parallax effects** to separate each section and create positive user response. These features will turn into images which scroll up and down with the rest of the page for iPads and phones. 
-
-### Work
-The Work page features **images in thumbnails** in 4 columns wide for laptop and desktop devices, 2 for iPads and 1 column wide for mobile devices.
-Each image can be clicked to open a **fancybox** window to view further images/details of each project. 
-The **testimonials** are placed below the project works to build trust and credibility and accountability of the designer. 
-At the bottom of the page, there is an invitation to have a chat about the user’s project via a **call to action** button: *Book your free consultation session now!*. 
-The Work page also uses **parallax effects** to separate each section and create positive user response. These features will turn into images which scroll up and down with the rest of the page for iPads and phones. 
-
-### Contact  
-The contact page features the **consultation stages**. Each stage is warped in a box with a large icon and some description to inform the users of collaboration process. 
-Then, there will be a **Consultation Form** which the user can fill up to reach the designer laying over a **promotional image**. 
-The bottom of the form contains a **Book your free consultation now!** button.  
+### Passive High Pass Filter Calculator
+As with the Low Pass Filter, this allows the user to enter 2 of the 3 values required, including their unti scales. This then calculates the result and displays it on the screen. As an example, if the user enters a Resistance value of 8 with a unit scale of ohm, and a Cut-off Frequency of 8 with a unit scale of kHz, the rult is provided as 2.49μF (micro-Farad) as the required Capacitance.
 
 # Existing Features 
 * Header Logo – Exists on every page aiming to promote brand awareness. Clicking on the logo will return the users to the Home page as they expect. 
