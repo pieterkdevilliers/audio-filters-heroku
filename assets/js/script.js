@@ -35,7 +35,6 @@ function receiveValues() {
     } else if (resistanceValue !== "0" && capacitanceValue !== "0" && frequencyValue === "0") {
         calculateFinalFrequency(scaledCapacitance, scaledResistance);
     } else {
-        alert("Please complete two values in order to calculate the third");
         deliverAlertMessage();
     }
 }
@@ -327,6 +326,4 @@ function deliverResistanceValue () {
 
  function deliverAlertMessage () {
     document.getElementById("alert").innerText = "Please complete two values in order to calculate the third";
-    console.log("error message generated");
-    // resetValues();
 }
