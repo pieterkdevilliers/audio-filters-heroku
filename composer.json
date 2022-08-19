@@ -1,0 +1,9 @@
+{
+    "name": "pieterkdevilliers/audio-filters-main",
+    "autoload": {
+        "psr-4": {
+            "Pieterkdevilliers\\AudioFiltersMain\\": "src/"
+        }
+    },
+    "require": {}
+}
