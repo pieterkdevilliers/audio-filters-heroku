@@ -240,6 +240,35 @@ h3 {
     color: #42BDAA;
 }
 
+/* article text styling */
+
+.article-section-header {
+    flex-wrap: nowrap;
+    flex-shrink: 1;
+    padding: 00.5rem;
+    color: #42BDAA;
+    align-content: center;
+    font-family: Lato, sans-serif;
+}
+
+.article-section-paragraph {
+    flex-wrap: nowrap;
+    flex-shrink: 1;
+    padding: 00.5rem;
+    color: #FFFFFF;
+    font-family: Lato, sans-serif;
+}
+
+.article-section-list-item {
+    flex-wrap: nowrap;
+    flex-shrink: 1;
+    padding: 00.5rem;
+    color: #FFFFFF;
+    font-family: Lato, sans-serif;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
 /* media queries*/
 
 /* for screen size from 400px wide and down */
@@ -276,3 +305,4 @@ h3 {
         text-align: center;
     }
 }
+
