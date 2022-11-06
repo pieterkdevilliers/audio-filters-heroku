@@ -95,18 +95,167 @@
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
     </div>
-    <div class="equation">
-        <img src="./assets/images/fc-equation.webp" alt="Low Pass Filter Equation" class="equation-diagram" aria-label="The formula used in the calculation is fc = 1 / (2*π*R*C)">
+    <div>
+        <h3 class="article-section-header">Definition</h3>
     </div>
-    <div class="equation-legend">
-        <p>R = Resistance</p>
-        <p>C = Capacitance</p>
-        <p>fc = Cut-off Frequency</p>
+    <div>
+        <p class="article-section-paragraph">For most electronic applications, filters are circuit blocks applied to an input signal to achieve a  desired output signal by picking out specific components of the signal. Filters are commonly classified as either low-pass, high-pass, band-pass, or band-stop, depending on the type of signals they pick out. In the case of a high pass filter, an input signal is filtered by allowing high-frequency signals to pass without attenuation while rejecting low-frequency signals on the other hand:</p>
     </div>
     <div class="filter-diagrams">
         <img src="./assets/images/hpf-diagram.webp" alt="Fitler Type Diagram">
-        <img src="./assets/images/hpf-circuit.webp" alt="Circuit Diagram">
-        <img src="./assets/images/hpf-cut-off-freq.webp" alt="Cut-off Frequency Diagram">
+    </div>
+    <div>
+        <p class="article-section-paragraph">A high pass filter can be constructed by using either active components such as transistors and operating amplifiers, or passive components such as resistors and capacitors. Particularly, a first-order passive high pass filter is an electronic circuit block consisting of a single capacitor connected in series to a single resistor. The input voltage is connected in series to the filter, while the output voltage is taken by measuring the voltage drop across the resistor.</p>
+    </div>
+    <div>
+        <h3 class="article-section-header">Input-Output Voltage Characteristics</h3>
+    </div>
+    <div>
+        <p class="article-section-paragraph">The filtering effect of a passive high pass filter is attained by taking advantage of the capacitor's capacitive reactance, or the effective impedance of the circuit in sinusoidal inputs.</p>
+    </div>
+    <div>
+        <p class="article-section-paragraph">Intuitively at high frequencies, the expected output voltage has an amplitude less than or equal to that of the original input voltage. Moreover, at low frequencies, the expected output voltage would be highly attenuated. This input-output relationship can be mathematically derived from an application of voltage division:</p>
+    </div>
+    <div class="filter-diagrams">
+        <img src="./assets/images/Voltage Divider Circuit.webp" alt="Voltage Divider Circuit Diagram">
+    </div>
+    <div>
+        <p class="article-section-paragraph">Recall that from a series circuit of two resistive elements <strong>R<sub>1</sub></strong> and <strong>R<sub>2</sub></strong>, the output voltage <strong>V<sub>OUT</sub></strong> is taken from the voltage division between the resistances present in the circuit. Here, <strong>V<sub>IN</sub></strong> represents the input voltage to the high-pass filter:</p>
+    </div>
+    <div class="filter-diagrams">
+        <img src="./assets/images/Diagram 001.webp" alt="Calculation Diagram 1">
+    </div>
+    <div>
+        <p class="article-section-paragraph">Note that as the resistance of <strong>R<sub>1</sub></strong> increases, the output voltage becomes snaller. For example, consider the circuit where <strong>R<sub>1</sub> = R<sub>2</sub> = 1kΩ</strong> and <strong>V<sub>IN</sub> = 5V</strong>. At this configuration, the value of can be computed to be:</p>
+    </div>
+    <div class="filter-diagrams">
+        <img src="./assets/images/Diagram 002.webp" alt="Calculation Diagram 2">
+    </div>
+    <div>
+        <p class="article-section-paragraph">If the resistance is increased to <strong>R<sub>1</sub> = 3kΩ</strong>, the output voltage then decreases to:</p>
+    </div>
+    <div class="filter-diagrams">
+        <img src="./assets/images/Diagram 015.webp" alt="Calculation Diagram 3">
+    </div>
+    <div>
+        <p class="article-section-paragraph">This implies that there is an inversely proportional relationship between the resistance of <strong>R<sub>1</sub></strong> and the output voltage <strong>V<sub>OUT</sub></strong>.
+            The same phenomenon is observed if <strong>R<sub>1</sub></strong> is replaced with a capacitive element <strong>C</strong>, in which case the circuit becomes a first-order passive high-pass filter.</p>
+    </div>
+    <div class="filter-diagrams">
+        <img src="./assets/images/hpf-circuit.webp" alt="Circuit Type Diagram">
+    </div>
+    <div>
+        <p class="article-section-paragraph">For a capacitor in the frequency domain, its capacitive reactance <strong>X<sub>C</sub></strong> can be expressed in terms of its capacitance <strong>C</strong>(in Farads) and the frequency at which it operates, denoted by <strong>f</strong> (in Hertz):</p>
+    </div>
+    <div class="filter-diagrams">
+        <img src="./assets/images/Diagram 004.webp" alt="Calculation Diagram 4">
+    </div>
+    <div>
+        <p class="article-section-paragraph">Hence, if the purely resistive element <strong>R<sub>1</sub></strong> is replaced by a capacitor <strong>C</strong>, the resulting series impedance <strong>Z</strong> would have a value given by:</p>
+    </div>
+    <div class="filter-diagrams">
+        <img src="./assets/images/Diagram 016.webp" alt="Calculation Diagram 5">
+    </div>
+    <div>
+        <p class="article-section-paragraph">Now, applying the voltage divider rule, the output voltage of a first-order passive high-pass filter can be written as follows:</p>
+    </div>
+    <div class="filter-diagrams">
+        <img src="./assets/images/Diagram 017.webp" alt="Calculation Diagram 6">
+    </div>
+    <div>
+        <p class="article-section-paragraph">From the above equation, we verify the following observations:</p>
+    </div>
+    <div>
+        <ul class="article-section-paragraph">
+            <li class="article-section-list-item">At low frequencies, the reactance of the capacitor is large and thus the voltage drop across the capacitor will also be large. Hence, the output voltage becomes small following voltage division.</li>
+            <li class="article-section-list-item">As the frequency increases, the reactance of the capacitor decreases, and the effective impedance of the circuit becomes smaller. This, in turn, results in an output voltage that is less than or equal to the input voltage.</li>
+        </ul>
+    </div>
+    <div>
+        <p class="article-section-paragraph">As an example, we consider a first-order high-pass filter whose components are given by <strong>R = 3.3kΩ</strong> and <strong>C = 3nF</strong>, with an input voltage of <strong>V<sub>IN</sub> = 15V</strong> . At an operating frequency of <strong>f = 1kHz</strong>, the capacitive reactance of the capacitor is given by:</p>
+    </div>
+    <div class="filter-diagrams">
+        <img src="./assets/images/Diagram 007.webp" alt="Calculation Diagram 7">
+    </div>
+    <div>
+        <p class="article-section-paragraph">The output voltage can then be computed to be less than 1 volt, signaficantly smaller than the input voltage:</p>
+    </div>
+    <div class="filter-diagrams">
+        <img src="./assets/images/Diagram 018.webp" alt="Calculation Diagram 8">
+    </div>
+    <div>
+        <p class="article-section-paragraph">Then, if the frequency is increased to <strong> f = 100kHz</strong>, the capacitive reactance would become smaller:</p>
+    </div>
+    <div class="filter-diagrams">
+        <img src="./assets/images/Diagram 009.webp" alt="Calculation Diagram 9">
+    </div>
+    <div>
+        <p class="article-section-paragraph">Consequently, the output voltage also becomes larger due to the descreased reactance value:</p>
+    </div>
+    <div class="filter-diagrams">
+        <img src="./assets/images/Diagram 019.webp" alt="Calculation Diagram 10">
+    </div>
+    <div>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8681904780760107"
+     crossorigin="anonymous"></script>
+<!-- General Ad Unit -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-8681904780760107"
+     data-ad-slot="6202622018"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+    </div>
+    <div>
+        <h3 class="article-section-header">Frequency Response</h3>
+    </div>
+    <div>
+        <p class="article-section-paragraph">The output of a passive high-pass filter can be further characterised by observing its frequency response. We can plot the filter's gain A, expressed as the ratio between the input and output voltages of the circuit, over the frequency <strong>f</strong>at which the circuit operates. 
+            Since electronic filters are used in a wide range of operating frequencies, it is convenient to make use of logarithmic Bode plots in plotting frequency response curves. Here, the vertical axis represents the gain (in decibels), and the horizontal axis represents the frequency (in decades). For reference, the equation used for computing the gain is given by:</p>
+    </div>
+    <div class="filter-diagrams">
+        <img src="./assets/images/Diagram 011.webp" alt="Calculation Diagram 11">
+    </div>
+    <div>
+        <p class="article-section-paragraph">Simulating the frequency response of a first-order high-pass filter, we obtain a Bode plot resembling the illustration below:</p>
+    </div>
+    <div class="filter-diagrams">
+        <img src="./assets/images/hpf-cut-off-freq.webp" alt="Cut Off Frequency Diagram">
+    </div>
+    <div>
+        <p class="article-section-paragraph">Note that the gain of the filter remains constant for low frequencies, with a constant voltage increase by a factor of 10 (+20dB) for every decade.
+            Then at a certain frequency, the slope of the gain begins to decrease to zero. This is called the cut-off frequency, corner frequency, or the -3 dB frequency of the high-pass filter. At this cut-off frequency, the output voltage is approximately 70.71%of the input voltage.
+            Finally, at higher frequencies beyond the cut-off frequency, the output voltage remains approximately equal to the input voltage.</p>
+    </div>
+    <div>
+        <h3 class="article-section-header">Formula</h3>
+    </div>
+    <div>
+        <p class="article-section-paragraph">From the output voltage equation, we examine the reactance of the capacitor at the cut-off frequency <strong>f<sub>C</sub></strong>. At the cutoff frequency, the capacitive reactance is equal to the resistance of the resistor present in the high-pass filter:</p>
+    </div>
+    <div class="filter-diagrams">
+        <img src="./assets/images/Diagram 020.webp" alt="Calculation Diagram 12">
+    </div>
+    <div>
+        <p class="article-section-paragraph">Substituting this expression for <strong>X<sub>C</sub></strong> to the output voltage equation, it can be proven that the output is approximately 70.71% of the input voltage:</p>
+    </div>
+    <div class="filter-diagrams">
+        <img src="./assets/images/Diagram 021.webp" alt="Calculation Diagram 13">
+    </div>
+    <div>
+        <p class="article-section-paragraph">Furthermore, with this observation relating the passive elements in the passive high-pass filter, we can derive a formula for the cut-off frequency <strong>f<sub>C</sub></strong> in terms of the resistance and capacitance of the circuit:</p>
+    </div>
+    <div class="filter-diagrams">
+        <img src="./assets/images/fc-equation.webp" alt="Fitler Equation Diagram">
+    </div>
+    <div>
+        <p class="article-section-paragraph">In this equation, <strong>R</strong> is the resistance value of the resistor used (in Ohms) while <strong>C</strong> is the capacitance value of the capacitor (in Farads) in the circuit. Note that the cut-off frequency is expressed in Hertz. Given this formula, if we are given two quantities out of the three (<strong>R, C, f<sub>C</sub></strong>) we can compute the missing third by using the online calculator above. The expressions used in computing the resistance and capacitance values are directly derived from the formula for the cut-off frequency:</p>
+    </div>
+    <div class="filter-diagrams">
+        <img src="./assets/images/Diagram 014.webp" alt="Calculation Diagram 14">
     </div>
     <footer class="footer">Copyright: Pieter K de Villiers 2022</footer>
     
