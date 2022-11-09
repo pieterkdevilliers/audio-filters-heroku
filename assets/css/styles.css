@@ -6,6 +6,8 @@
 
 body {
     background-color: #231a1a;
+    max-width: 1170px;
+    margin: 0 auto;
 }
 
 body > * {
