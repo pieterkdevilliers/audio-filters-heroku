@@ -278,6 +278,16 @@ h3 {
     color: #42BDAA;
 }
 
+.privacy-policy .container {
+    display: block;
+}
+
+.privacy-policy footer a,
+.privacy-policy footer p a {
+    color: #42BDAA;
+}
+
+
 /* media queries*/
 
 /* for screen size from 400px wide and down */
