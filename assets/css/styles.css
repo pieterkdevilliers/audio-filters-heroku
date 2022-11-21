@@ -271,6 +271,13 @@ h3 {
     margin-right: 2rem;
 }
 
+/* Privacy Policy */
+.privacy-policy main {
+    padding: 1em 2em;
+    line-height: 1.6;
+    color: #42BDAA;
+}
+
 /* media queries*/
 
 /* for screen size from 400px wide and down */
